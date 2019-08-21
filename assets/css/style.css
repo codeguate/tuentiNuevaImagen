@@ -1,6 +1,102 @@
 html , body{
     width: 100%;
 }
-h2 ,h4{
+@font-face{
+    font-family: "Catamaran-medium";
+    src: url(../fonts/Catamaran-Medium.ttf);
+}
+@font-face{
+    font-family: "Catamaran-light";
+    src: url(../fonts/Catamaran-Light.ttf);
+}
+@font-face{
+    font-family: "Catamaran-semibold";
+    src: url(../fonts/SemiBold.ttf);
+}
+@font-face{
+    font-family: "Catamaran-extrabold";
+    src: url(../fonts/Catamaran-ExtraBold.ttf);
+}
+.c-medium , body{
+    font-family: "Catamaran-medium";
+}
+.c-light{
+    font-family: "Catamaran-light";
+}
+.c-sbold{
+    font-family: "Catamaran-semibold";
+}
+.c-bold{
+    font-family: "Catamaran-extrabold";
+}
+.w-90{
+    width: 90%;
+}
+.w-10{
+    width: 10%;
+}
+.w-15{
+    width: 15%;
+}
+.w-85{
+    width: 85%;
+}
+.h-90{
+    height: 90vh;
+}
+.h-10{
+    height: 10vh;
+}
+.pl-15{
+    padding-left: 15%;
+}
+h2{
+    font-size: 10.5em !important;
+    line-height: 1 !important;
+    
+}
+h4 {
+    font-size: 5em !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+}
+.pr-5{
+    padding-right: 5%;
+}
+.title{
     color: #ea4966;
+}
+.description{
+    color: #614d9a;
+}
+.button_more{
+    text-align: right;
+}
+
+.button_more button {
+    background-color: #614d9a;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    font-family: "Catamaran-medium";
+    border-radius: 5px;
+}
+.title_2{
+    font-size: 10.5em !important; 
+}
+.title_3{
+    font-size: 10em !important; 
+}
+.title_4{
+    font-size: 14em !important; 
+}
+.title_5{
+    font-size: 10.5em !important; 
+}
+.title_6{
+    font-size: 6em !important; 
+}
+.img_tema{
+    max-width: 100%;
+    height: 90vh !important;
 }
