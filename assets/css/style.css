@@ -227,6 +227,67 @@ h4 {
     border-radius: 15px;
 }
 /*End scrollbar*/
+.d-contents{
+    display: contents !important;
+    width: 100%;
+}
+@media only screen and (max-width:1000px){
+    .d-flex{
+        display: inherit !important;
+    }
+    .w-50{
+        width: 100% !important;
+    }
+    .col-sm-6{
+        padding: 0 !important;
+    }
+    .h-90{
+        height: fit-content !important;
+    }
+    h2 , h4{
+        font-size: 3.5em !important;
+    }
+    .col-img .d-flex{
+        display: flex !important;
+    }
+
+    .button_more {
+        text-align: left;
+        margin-left: 0 !important;
+    }
+    .description{
+        margin-left: 0 !important;
+        width: 90% !important;
+    }
+    .description p{
+        text-align: left !important;
+        overflow: hidden !important;
+    }
+    .title{
+        padding-left: 0 !important;
+    }
+    .contain-arrow.d-flex{
+        display: none !important;
+    }
+    .img-data{
+        width: 100% !important;
+    }
+    .contain_more_data{
+        left: 100%;
+        opacity: 0.2;
+        width: 100%;
+    }
+    .data-text {
+        overflow-y: hidden;
+        height: 100%;
+        margin: auto;
+        width: 100% !important;
+        margin-left: 0;
+    }
+    
+}
+
+
 .animation-target {
     -webkit-animation: animation 2000ms linear infinite both;
     animation: animation 2000ms linear infinite both;

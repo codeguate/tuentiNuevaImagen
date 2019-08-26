@@ -172,6 +172,28 @@ $(document).ready(function () {
       }, 500);
       $("#contein_row_9 #more-3").fadeIn();
     });
+    ////////////////////////////
+    $("#more-22").click(function(){
+      if($(window).width()<1000){
+        $("#contein_row_2 .col-xs-6").animate({
+          opacity: "0.2",
+          left: "-100%",
+          width: "100%"
+        },500,function(){
+          $("#contein_row_2 .col-xs-6").removeClass("d-flex");
+          $("#contein_row_2 .col-xs-6").addClass("d-none");
+          $("#contein_row_2 .contain_more_data").removeClass("d-none");
+          $("#contein_row_2 .contain_more_data").addClass("d-flex");
+          $("#contein_row_2").removeClass("h-90");
+          $("#contein_row_2").attr("style","height: 100vh !important");
+          $("#contein_row_2 .contain_more_data").animate({
+            opacity: "1",
+            left: "0"
+          },500);
+        });
+      }
+    });
+    
     /*END CODE 21/08/19*/
 });
 function animation(num){
