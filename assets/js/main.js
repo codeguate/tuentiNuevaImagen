@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
@@ -510,12 +519,57 @@ function animation(num){
   
   //setTimeout(function(){$(".col-img").fadeOut()},1000);
 }
+var rows = [
+  {
+    id:1,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:2,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:3,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:4,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:5,
+    keys:"",
+    div:"",
+    skills:""
+  },
+]
 function buscar(text){
-    $("#alert1").animate({bottom:'80%'}, 300);
+    if(text==""){
+      $("#alert1").animate({bottom:'0%'}, 300);
+      $("#alert2").animate({bottom:'0%'}, 300);
+      $("#alert3").animate({bottom:'0%'}, 300);
+      $("#alert4").animate({bottom:'0%'}, 300);
+      $("#alert5").animate({bottom:'0%'}, 300);
+    }else{
+
+
+      $("#alert1").animate({bottom:'80%'}, 300);
+      $("#alert2").animate({bottom:'65%'}, 300);
+      $("#alert3").animate({bottom:'50%'}, 300);
+      $("#alert4").animate({bottom:'35%'}, 300);
+      $("#alert5").animate({bottom:'20%'}, 300);
+    }
+   
     // $("#alert1").removeClass("iniciar");
     // $("#alert1").addClass("fin");
-    
-    console.log(text);
     
 }
 
