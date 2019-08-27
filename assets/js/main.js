@@ -1,9 +1,18 @@
 $(document).ready(function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
         triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
         offset: 0 // move trigger to center of element
       })
       .setClassToggle("#contein_row_1", "visible") // add class to reveal
@@ -12,9 +21,9 @@ $(document).ready(function () {
 
       new ScrollMagic.Scene({
         triggerElement: "#trigger2",
-        triggerHook: 0.7, // show, when scrolled 10% into view
+        triggerHook: 0.9, // show, when scrolled 10% into view
         duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
+        offset: 100 // move trigger to center of element
       })
       .setClassToggle("#contein_row_2", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
@@ -111,24 +120,54 @@ $(document).ready(function () {
     /*CODE ANTONY*/
     
     $("#button_row_2").click(function(){
-      $("#contein_row_2 ").animate({
-        width: "100%"
-      },500);
-      $("#contein_row_2 .contain_more_data").animate({
-        left: "+=70%",
-        opacity: 1,
-        display: "none"
-      },500);
-      $("#contein_row_2 .col-img").removeClass("d-none");
-      $("#contein_row_2 .col-img").addClass("d-flex");
-      $("#contein_row_2.title h4").css("font-size","");
-      $("#contein_row_2 .title_2").css("font-size","");
-      $("#contein_row_2 .col-img").animate({
-        opacity: 1,
-        top: "0",
-        height: "toggle"
-      }, 500);
-      $("#contein_row_2 #more-2").fadeIn();
+      if ($(window).width() < 960) {
+          console.log("click mobil click");
+          
+          $("#contein_row_2 .contain_more_data").animate({
+            opacity: "0.2",
+            left: "+100%"
+          },500,function(){
+            $("#contein_row_2 .col-xs-6").removeClass("d-none");
+            $("#contein_row_2 .col-xs-6").addClass("d-flex");
+            $("#contein_row_2 .contain_more_data").removeClass("d-flex");
+            $("#contein_row_2 .contain_more_data").addClass("d-none");
+            $("#contein_row_2 .col-xs-6").animate({
+              opacity: "1",
+              left: "0%",
+              width: "100%"
+            },500,function(){
+              console.log("full");
+              $("#contein_row_2").addClass("h-90");
+              $("#contein_row_2").removeAttr("style","height: 100vh !important");
+            });
+          });
+          
+      }else {
+        $("#contein_row_2 ").animate({
+          width: "100%"
+        },500);
+        $("#contein_row_2 .contain_more_data").animate({
+          left: "+=70%",
+          opacity: 1,
+          display: "none"
+        },500);
+        $("#contein_row_2 .col-img").removeClass("d-none");
+        $("#contein_row_2 .col-img").addClass("d-flex");
+        $("#contein_row_2.title h4").css("font-size","");
+        $("#contein_row_2 .title_2").css("font-size","");
+        
+        $("#contein_row_2 .col-img").animate({
+          opacity: 1,
+          top: "0",
+          height: "toggle",
+          display: "none"
+        }, 500,function(){
+          $("#contein_row_2 .contain_more_data").removeClass("d-flex");
+          $("#contein_row_2 .contain_more_data").addClass("d-none");
+        });
+        $("#contein_row_2 #more-2").fadeIn();
+      }
+      
     });
 
     $("#button_row_3").click(function(){
@@ -510,12 +549,57 @@ function animation(num){
   
   //setTimeout(function(){$(".col-img").fadeOut()},1000);
 }
+var rows = [
+  {
+    id:1,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:2,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:3,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:4,
+    keys:"",
+    div:"",
+    skills:""
+  },
+  {
+    id:5,
+    keys:"",
+    div:"",
+    skills:""
+  },
+]
 function buscar(text){
-    $("#alert1").animate({bottom:'80%'}, 300);
+    if(text==""){
+      $("#alert1").animate({bottom:'0%'}, 300);
+      $("#alert2").animate({bottom:'0%'}, 300);
+      $("#alert3").animate({bottom:'0%'}, 300);
+      $("#alert4").animate({bottom:'0%'}, 300);
+      $("#alert5").animate({bottom:'0%'}, 300);
+    }else{
+
+
+      $("#alert1").animate({bottom:'80%'}, 300);
+      $("#alert2").animate({bottom:'65%'}, 300);
+      $("#alert3").animate({bottom:'50%'}, 300);
+      $("#alert4").animate({bottom:'35%'}, 300);
+      $("#alert5").animate({bottom:'20%'}, 300);
+    }
+   
     // $("#alert1").removeClass("iniciar");
     // $("#alert1").addClass("fin");
-    
-    console.log(text);
     
 }
 
