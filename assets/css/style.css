@@ -263,6 +263,19 @@ h4 {
     display: contents !important;
     width: 100%;
 }
+
+.button_search {
+    background-color: #614d9a;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    font-family: "Catamaran-medium";
+    border-radius: 5px;
+    display: block;
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+}
 @media only screen and (max-width:1000px){
     .d-flex{
         display: inherit !important;
@@ -322,7 +335,41 @@ h4 {
     .contain_more_data .row{
         height: 100% !important;
     }
+    .ml15 .word {
+        font-size: 1.5em!important;
+    }
+    .ml15{
+        width: 80% !important;
+        margin: auto;
+
+        padding-top: 25vh;
+    }
+    .sub-title{
+        width: 80%;
+        margin: auto;
+        padding: 5% 0%;
+    }
+    .description{
+        width: 80% !important; 
+        margin: auto !important;
+    }
+    .col .description ,.text_description{
+        width: 100% !important;
+    }
+    .pl-15{
+        padding-left: 0 !important;
+    }
+    #animate1{
+        display: none !important;
+    }
+    #contein_row_1{
+        height: 104vh !important;
+    }
+    .row{
+        margin: 0 !important;
+    }
 }
+
 .facebook_flotante{
     position: absolute;
     width: 31%;
