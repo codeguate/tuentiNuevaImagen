@@ -1,5 +1,6 @@
 html , body{
     width: 100%;
+    color: white !important;
 }
 .color-tuenti{
     color: #fc1368;
@@ -240,9 +241,12 @@ h4 {
     border-radius: 4px;
     background-color: transparent;
 }
-.text_description{
+/* .text_description{
     direction: rtl;
 }
+.text_description p{
+    direction: rtl;
+} */
 .data-text::-webkit-scrollbar{
     width: 10px;
     padding: 2px;     /* Tamaño del scroll en vertical */    /* heigth Tamaño del scroll en horizontal */ 
@@ -312,7 +316,12 @@ h4 {
         width: 100% !important;
         margin-left: 0;
     }
-    
+    .text_description p{
+        height: fit-content !important;
+    }
+    .contain_more_data .row{
+        height: 100% !important;
+    }
 }
 .facebook_flotante{
     position: absolute;
@@ -450,8 +459,33 @@ h4 {
                 line-height: 1em;
               }
 
-
+/* 
 #contein_row_2 {
+    opacity: 0;
+    z-index:-100;
+    display:none;
+    -webkit-transform: scale(0.5);
+         -moz-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+             -o-transform: scale(0.5);
+                    transform: scale(0.5);
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+	}
+	#contein_row_2.visible {
+        opacity: 1;
+        z-index:100;
+        display:flex;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+    }
+    #contein_row_1 {
         opacity: 0;
         z-index:-100;
         display:none;
@@ -466,35 +500,10 @@ h4 {
 				 -o-transition: all 1s ease-in-out;
 						transition: all 1s ease-in-out;
 	}
-	#contein_row_2.visible {
-        opacity: 1;
-        z-index:100;
-        display:block;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-    }
-    #contein_row_1 {
-        opacity: 0;
-        z-index:-100;
-        display:none;
-		-webkit-transform: translateX(-100%);
-			 -moz-transform: translateX(-100%);
-				-ms-transform: translateX(-100%);
-				 -o-transform: translateX(-100%);
-						transform: translateX(-100%);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
 	#contein_row_1.visible {
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -506,11 +515,11 @@ h4 {
         opacity: 0;
         z-index:-100;
         display:none;
-		-webkit-transform: translateX(100%);
-			 -moz-transform: translateX(100%);
-				-ms-transform: translateX(100%);
-				 -o-transform: translateX(100%);
-						transform: translateX(100%);
+		-webkit-transform: scale(0.5);
+			 -moz-transform: scale(0.5);
+				-ms-transform: scale(0.5);
+				 -o-transform: scale(0.5);
+						transform: scale(0.5);
 		-webkit-transition: all 1s ease-in-out;
 			 -moz-transition: all 1s ease-in-out;
 				-ms-transition: all 1s ease-in-out;
@@ -520,7 +529,7 @@ h4 {
 	#contein_row_3.visible {
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -532,11 +541,11 @@ h4 {
         opacity: 0;
         z-index:-100;
         display:none;
-		-webkit-transform: translateY(100%);
-			 -moz-transform: translateY(100%);
-				-ms-transform: translateY(100%);
-				 -o-transform: translateY(100%);
-						transform: translateY(100%);
+		-webkit-transform: scale(0.5);
+			 -moz-transform: scale(0.5);
+				-ms-transform: scale(0.5);
+				 -o-transform: scale(0.5);
+						transform: scale(0.5);
 		-webkit-transition: all 1s ease-in-out;
 			 -moz-transition: all 1s ease-in-out;
 				-ms-transition: all 1s ease-in-out;
@@ -546,7 +555,7 @@ h4 {
 	#contein_row_4.visible {
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -556,13 +565,12 @@ h4 {
     
     #contein_row_5 {
         opacity: 0;
-        z-index:-100;
-        display:none;
-		-webkit-transform: translateY(100%);
-			 -moz-transform: translateY(100%);
-				-ms-transform: translateY(100%);
-				 -o-transform: translateY(100%);
-						transform: translateY(100%);
+
+		-webkit-transform: scale(0.5);
+			 -moz-transform: scale(0.5);
+				-ms-transform: scale(0.5);
+				 -o-transform: scale(0.5);
+						transform: scale(0.5);
 		-webkit-transition: all 1s ease-in-out;
 			 -moz-transition: all 1s ease-in-out;
 				-ms-transition: all 1s ease-in-out;
@@ -572,7 +580,7 @@ h4 {
 	#contein_row_5.visible {
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -582,13 +590,12 @@ h4 {
     
     #contein_row_6 {
         opacity: 0;
-        z-index:-100;
-        display:none;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
+        visibility: hidden !important;
+		-webkit-transform: scale(0);
+			 -moz-transform: scale(0);
+				-ms-transform: scale(0);
+				 -o-transform: scale(0);
+						transform: scale(0);
 		-webkit-transition: all 1s ease-in-out;
 			 -moz-transition: all 1s ease-in-out;
 				-ms-transition: all 1s ease-in-out;
@@ -596,25 +603,24 @@ h4 {
 						transition: all 1s ease-in-out;
 	}
 	#contein_row_6.visible {
+        visibility: inherit !important;
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
 				 -o-transform: none;
 						transform: none;
     }
-    
+
     #contein_row_7 {
         opacity: 0;
-        z-index:-100;
-        display:none;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
+		-webkit-transform: scale(0.5);
+			 -moz-transform: scale(0.5);
+				-ms-transform: scale(0.5);
+				 -o-transform: scale(0.5);
+						transform: scale(0.5);
 		-webkit-transition: all 1s ease-in-out;
 			 -moz-transition: all 1s ease-in-out;
 				-ms-transition: all 1s ease-in-out;
@@ -624,7 +630,7 @@ h4 {
 	#contein_row_7.visible {
         opacity: 1;
         z-index:100;
-        display:block;
+        display:flex;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
@@ -708,4 +714,4 @@ h4 {
 				-ms-transform: none;
 				 -o-transform: none;
 						transform: none;
-	}
+	} */

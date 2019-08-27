@@ -9,105 +9,105 @@ $(document).ready(function () {
     });
 });
     var controller = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger1",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_1", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger1",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_1", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger2",
-        triggerHook: 0.9, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 100 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_2", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger2",
+      //   triggerHook: 0.9, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 100 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_2", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger3",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_3", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger3",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_3", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger4",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_4", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger4",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_4", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger5",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_5", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger5",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_5", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger6",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_6", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger6",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_6", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger7",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_7", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger7",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_7", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger8",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_8", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger8",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_8", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger9",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_9", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger9",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_9", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: "#trigger10",
-        triggerHook: 0.7, // show, when scrolled 10% into view
-        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 0 // move trigger to center of element
-      })
-      .setClassToggle("#contein_row_10", "visible") // add class to reveal
-      // .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //   triggerElement: "#trigger10",
+      //   triggerHook: 0.7, // show, when scrolled 10% into view
+      //   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      //   offset: 0 // move trigger to center of element
+      // })
+      // .setClassToggle("#contein_row_10", "visible") // add class to reveal
+      // // .addIndicators() // add indicators (requires plugin)
+      // .addTo(controller);
 
      
 
@@ -127,11 +127,11 @@ $(document).ready(function () {
             opacity: "0.2",
             left: "+100%"
           },500,function(){
-            $("#contein_row_2 .col-xs-6").removeClass("d-none");
-            $("#contein_row_2 .col-xs-6").addClass("d-flex");
+            $("#contein_row_2 .col-f").removeClass("d-none");
+            $("#contein_row_2 .col-f").addClass("d-flex");
             $("#contein_row_2 .contain_more_data").removeClass("d-flex");
             $("#contein_row_2 .contain_more_data").addClass("d-none");
-            $("#contein_row_2 .col-xs-6").animate({
+            $("#contein_row_2 .col-f").animate({
               opacity: "1",
               left: "0%",
               width: "100%"
@@ -178,11 +178,11 @@ $(document).ready(function () {
             opacity: "0.2",
             left: "+100%"
           },500,function(){
-            $("#contein_row_3 .col-xs-6").removeClass("d-none");
-            $("#contein_row_3 .col-xs-6").addClass("d-flex");
+            $("#contein_row_3 .col-f").removeClass("d-none");
+            $("#contein_row_3 .col-f").addClass("d-flex");
             $("#contein_row_3 .contain_more_data").removeClass("d-flex");
             $("#contein_row_3 .contain_more_data").addClass("d-none");
-            $("#contein_row_3 .col-xs-6").animate({
+            $("#contein_row_3 .col-f").animate({
               opacity: "1",
               left: "0%",
               width: "100%"
@@ -223,11 +223,11 @@ $(document).ready(function () {
           opacity: "0.2",
           left: "+100%"
         },500,function(){
-          $("#contein_row_4 .col-xs-6").removeClass("d-none");
-          $("#contein_row_4 .col-xs-6").addClass("d-flex");
+          $("#contein_row_4 .col-f").removeClass("d-none");
+          $("#contein_row_4 .col-f").addClass("d-flex");
           $("#contein_row_4 .contain_more_data").removeClass("d-flex");
           $("#contein_row_4 .contain_more_data").addClass("d-none");
-          $("#contein_row_4 .col-xs-6").animate({
+          $("#contein_row_4 .col-f").animate({
             opacity: "1",
             left: "0%",
             width: "100%"
@@ -268,11 +268,11 @@ $(document).ready(function () {
           opacity: "0.2",
           left: "+100%"
         },500,function(){
-          $("#contein_row_5 .col-xs-6").removeClass("d-none");
-          $("#contein_row_5 .col-xs-6").addClass("d-flex");
+          $("#contein_row_5 .col-f").removeClass("d-none");
+          $("#contein_row_5 .col-f").addClass("d-flex");
           $("#contein_row_5 .contain_more_data").removeClass("d-flex");
           $("#contein_row_5 .contain_more_data").addClass("d-none");
-          $("#contein_row_5 .col-xs-6").animate({
+          $("#contein_row_5 .col-f").animate({
             opacity: "1",
             left: "0%",
             width: "100%"
@@ -313,11 +313,11 @@ $(document).ready(function () {
           opacity: "0.2",
           left: "+100%"
         },500,function(){
-          $("#contein_row_6 .col-xs-6").removeClass("d-none");
-          $("#contein_row_6 .col-xs-6").addClass("d-flex");
+          $("#contein_row_6 .col-f").removeClass("d-none");
+          $("#contein_row_6 .col-f").addClass("d-flex");
           $("#contein_row_6 .contain_more_data").removeClass("d-flex");
           $("#contein_row_6 .contain_more_data").addClass("d-none");
-          $("#contein_row_6 .col-xs-6").animate({
+          $("#contein_row_6 .col-f").animate({
             opacity: "1",
             left: "0%",
             width: "100%"
@@ -416,13 +416,13 @@ $(document).ready(function () {
     ////////////////////////////
     $("#more-22").click(function(){
       if($(window).width()<1000){
-        $("#contein_row_2 .col-xs-6").animate({
+        $("#contein_row_2 .col-f").animate({
           opacity: "0.2",
           left: "-100%",
           width: "100%"
         },500,function(){
-          $("#contein_row_2 .col-xs-6").removeClass("d-flex");
-          $("#contein_row_2 .col-xs-6").addClass("d-none");
+          $("#contein_row_2 .col-f").removeClass("d-flex");
+          $("#contein_row_2 .col-f").addClass("d-none");
           $("#contein_row_2 .contain_more_data").removeClass("d-none");
           $("#contein_row_2 .contain_more_data").addClass("d-flex");
           $("#contein_row_2").removeClass("h-90");
@@ -432,18 +432,20 @@ $(document).ready(function () {
             left: "0"
           },500);
         });
+      }else{
+        animation(2);
       }
     });
     $("#more-33").click(function(){
       if($(window).width()<1000){
         console.log("more 33");
-        $("#contein_row_3 .col-xs-6").animate({
+        $("#contein_row_3 .col-f").animate({
           opacity: "0.2",
           left: "-100%",
           width: "100%"
         },500,function(){
-          $("#contein_row_3 .col-xs-6").removeClass("d-flex");
-          $("#contein_row_3 .col-xs-6").addClass("d-none");
+          $("#contein_row_3 .col-f").removeClass("d-flex");
+          $("#contein_row_3 .col-f").addClass("d-none");
           $("#contein_row_3 .contain_more_data").removeClass("d-none");
           $("#contein_row_3 .contain_more_data").addClass("d-flex");
           $("#contein_row_3").removeClass("h-90");
@@ -453,18 +455,20 @@ $(document).ready(function () {
             left: "0"
           },500);
         });
+      }else{
+        animation(3);
       }
     });
     $("#more-44").click(function(){
       if($(window).width()<1000){
         console.log("more 44");
-        $("#contein_row_4 .col-xs-6").animate({
+        $("#contein_row_4 .col-f").animate({
           opacity: "0.2",
           left: "-100%",
           width: "100%"
         },500,function(){
-          $("#contein_row_4 .col-xs-6").removeClass("d-flex");
-          $("#contein_row_4 .col-xs-6").addClass("d-none");
+          $("#contein_row_4 .col-f").removeClass("d-flex");
+          $("#contein_row_4 .col-f").addClass("d-none");
           $("#contein_row_4 .contain_more_data").removeClass("d-none");
           $("#contein_row_4 .contain_more_data").addClass("d-flex");
           $("#contein_row_4").removeClass("h-90");
@@ -474,18 +478,20 @@ $(document).ready(function () {
             left: "0"
           },500);
         });
+      }else{
+        animation(4);
       }
     });
     $("#more-55").click(function(){
       if($(window).width()<1000){
         console.log("more 55");
-        $("#contein_row_5 .col-xs-6").animate({
+        $("#contein_row_5 .col-f").animate({
           opacity: "0.2",
           left: "-100%",
           width: "100%"
         },500,function(){
-          $("#contein_row_5 .col-xs-6").removeClass("d-flex");
-          $("#contein_row_5 .col-xs-6").addClass("d-none");
+          $("#contein_row_5 .col-f").removeClass("d-flex");
+          $("#contein_row_5 .col-f").addClass("d-none");
           $("#contein_row_5 .contain_more_data").removeClass("d-none");
           $("#contein_row_5 .contain_more_data").addClass("d-flex");
           $("#contein_row_5").removeClass("h-90");
@@ -495,18 +501,20 @@ $(document).ready(function () {
             left: "0"
           },500);
         });
+      }else{
+        animation(5);
       }
     });
     $("#more-66").click(function(){
       if($(window).width()<1000){
         console.log("more 66");
-        $("#contein_row_6 .col-xs-6").animate({
+        $("#contein_row_6 .col-f").animate({
           opacity: "0.2",
           left: "-100%",
           width: "100%"
         },500,function(){
-          $("#contein_row_6 .col-xs-6").removeClass("d-flex");
-          $("#contein_row_6 .col-xs-6").addClass("d-none");
+          $("#contein_row_6 .col-f").removeClass("d-flex");
+          $("#contein_row_6 .col-f").addClass("d-none");
           $("#contein_row_6 .contain_more_data").removeClass("d-none");
           $("#contein_row_6 .contain_more_data").addClass("d-flex");
           $("#contein_row_6").removeClass("h-90");
@@ -516,6 +524,8 @@ $(document).ready(function () {
             left: "0"
           },500);
         });
+      }else{
+        animation(6);
       }
     });
     
@@ -524,30 +534,29 @@ $(document).ready(function () {
 function animation(num){
   switch(num){
     case 2:
-        console.log("execute row 2");
-        $("#contein_row_2 .col-img").animate({
-          opacity: 0.25,
-          top: "-=50",
-          height: "toggle"
-        }, 500, function() {
-          $("#contein_row_2 .col-img").removeClass("d-flex");
-          $("#contein_row_2 .col-img").addClass("d-none");
-          
-          $("#contein_row_2 ").animate({
-            width: "25%"
-          },500,function(){
-            $("#contein_row_2 .title h4").css("font-size","3em");
-            $("#contein_row_2 .title_2").css("font-size","3em");
-            $("#contein_row_2 #more-2").fadeOut();
-            $("#contein_row_2 .contain_more_data").removeClass("d-none");
-            $("#contein_row_2 .contain_more_data").addClass("d-flex");
-            $("#contein_row_2 .contain_more_data").animate({
-              left: "-=70%",
-              opacity: 1,
-              display: "flex"
-            },500);
-          });
+      console.log("execute row 2");
+      $("#contein_row_2 .col-img").animate({
+        opacity: 0.25,
+        top: "-=50",
+        height: "toggle"
+      }, 500, function() {
+        $("#contein_row_2 .col-img").removeClass("d-flex");
+        $("#contein_row_2 .col-img").addClass("d-none");
+        $("#contein_row_2 ").animate({
+          width: "25%"
+        },500,function(){
+          $("#contein_row_2.title h4").css("font-size","3em");
+          $("#contein_row_2 .title_2").css("font-size","3em");
+          $("#contein_row_2 #more-33").fadeOut();
+          $("#contein_row_2 .contain_more_data").removeClass("d-none");
+          $("#contein_row_2 .contain_more_data").addClass("d-flex");
+          $("#contein_row_2 .contain_more_data").animate({
+            left: "-=70%",
+            opacity: 1,
+            display: "flex"
+          },500);
         });
+      });
     break;
     case 3:
         console.log("execute row 3");
@@ -563,7 +572,7 @@ function animation(num){
           },500,function(){
             $("#contein_row_3.title h4").css("font-size","3em");
             $("#contein_row_3 .title_2").css("font-size","3em");
-            $("#contein_row_3 #more-2").fadeOut();
+            $("#contein_row_3 #more-33").fadeOut();
             $("#contein_row_3 .contain_more_data").removeClass("d-none");
             $("#contein_row_3 .contain_more_data").addClass("d-flex");
             $("#contein_row_3 .contain_more_data").animate({
@@ -588,7 +597,7 @@ function animation(num){
           },500,function(){
             $("#contein_row_4.title h4").css("font-size","3em");
             $("#contein_row_4 .title_2").css("font-size","3em");
-            $("#contein_row_4 #more-2").fadeOut();
+            $("#contein_row_4 #more-44").fadeOut();
             $("#contein_row_4 .contain_more_data").removeClass("d-none");
             $("#contein_row_4 .contain_more_data").addClass("d-flex");
             $("#contein_row_4 .contain_more_data").animate({
@@ -613,7 +622,7 @@ function animation(num){
           },500,function(){
             $("#contein_row_5.title h4").css("font-size","3em");
             $("#contein_row_5 .title_2").css("font-size","3em");
-            $("#contein_row_5 #more-2").fadeOut();
+            $("#contein_row_5 #more-55").fadeOut();
             $("#contein_row_5 .contain_more_data").removeClass("d-none");
             $("#contein_row_5 .contain_more_data").addClass("d-flex");
             $("#contein_row_5 .contain_more_data").animate({
@@ -638,7 +647,7 @@ function animation(num){
           },500,function(){
             $("#contein_row_6.title h4").css("font-size","3em");
             $("#contein_row_6 .title_2").css("font-size","3em");
-            $("#contein_row_6 #more-2").fadeOut();
+            $("#contein_row_6 #more-66").fadeOut();
             $("#contein_row_6 .contain_more_data").removeClass("d-none");
             $("#contein_row_6 .contain_more_data").addClass("d-flex");
             $("#contein_row_6 .contain_more_data").animate({
@@ -783,23 +792,23 @@ function buscar(text){
     
 }
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml15 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 300,
-    delay: function(el, i) {
-      return 300 * i;
-    }
-  }).add({
-    targets: '.ml15',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+// anime.timeline({loop: false})
+//   .add({
+//     targets: '.ml15 .word',
+//     scale: [14,1],
+//     opacity: [0,1],
+//     easing: "easeOutCirc",
+//     duration: 300,
+//     delay: function(el, i) {
+//       return 800 * i;
+//     }
+//   }).add({
+//     targets: '.ml15',
+//     opacity: 1,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
 
 
 
