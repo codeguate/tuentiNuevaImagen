@@ -1,5 +1,28 @@
 $(document).ready(function () {
   
+  // $(document).scroll(function(e){
+	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
+	// 		console.log("true");			
+	// 	}else{
+  //     console.log("false");
+  //   }
+	// });	
+  $(window).scroll(function() {
+    var windowHeight = $(window).scrollTop();
+    var contenido2 = $("#contein_row_2").offset();
+		contenido2 = contenido2.top;
+    
+    if( contenido2 > windowHeight){
+      color();
+    }else{
+      white();
+    }
+    
+    
+    
+  });
+  
+  
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -276,7 +299,7 @@ $(document).ready(function () {
     .addTo(controller);
     /*CODE ANTONY*/
     
-    $("#button_row_2").click(function(){
+    $(".button_row_2").click(function(){
       if ($(window).width() < 960) {
           console.log("click mobil click");
           
@@ -327,7 +350,7 @@ $(document).ready(function () {
       
     });
 
-    $("#button_row_3").click(function(){
+    $(".button_row_3").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -372,7 +395,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_4").click(function(){
+    $(".button_row_4").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -417,7 +440,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_5").click(function(){
+    $(".button_row_5").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -462,7 +485,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_6").click(function(){
+    $(".button_row_6").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -998,7 +1021,28 @@ function buscar(text){
     // $("#alert1").addClass("fin");
     
 }
-
+function white(){
+  console.log("white");
+  $(".search_one").addClass("d-none");
+  $(".search_tre").addClass("d-none");
+  $(".search_two").removeClass("d-none");
+  $(".search_two").fadeIn();
+}
+function color(){
+  console.log("color");
+  $(".search_two").addClass("d-none");
+  $(".search_tre").addClass("d-none");
+  $(".search_one").removeClass("d-none");
+  $(".search_one").fadeIn();
+}
+function white_button(){
+  console.log("white_button");
+  $(".search_one").addClass("d-none");
+  $(".search_two").addClass("d-none");
+  $(".search_tre").removeClass("d-none");
+  $(".search_tre").fadeIn();
+  
+}
 // anime.timeline({loop: false})
 //   .add({
 //     targets: '.ml15 .word',

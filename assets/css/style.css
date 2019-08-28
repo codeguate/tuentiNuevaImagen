@@ -3,10 +3,10 @@ html , body{
     color: white !important;
 }
 .color-tuenti{
-    color: #fc1368;
+    color: #ff0066;
 }
 .bg-tuenti{
-    background-color: #fc1368;
+    background-color: #ff0066;
 }
 @font-face{
     font-family: "Catamaran-medium";
@@ -106,17 +106,17 @@ h4 {
     padding-right: 5%;
 }
 .title{
-    color: #ea4966;
+    color: #ff0066;
 }
 .description{
-    color: #614d9a;
+    color: #5e269aff;
 }
 .button_more{
     text-align: right;
 }
 
 .button_more button {
-    background-color: #614d9a;
+    background-color: #5e269aff;
     color: white;
     border: none;
     font-size: 1.5em;
@@ -140,7 +140,7 @@ h4 {
 }
 
 .return{
-    background-color: #614d9a;
+    background-color: #5e269aff;
     border: none;
     color: white;
     border-radius: 4px;
@@ -334,17 +334,18 @@ h4 {
 
 /*scrollbar*/
 .text_description p::-webkit-scrollbar {
-    width: 26px;     /* Tamaño del scroll en vertical */    /* heigth Tamaño del scroll en horizontal */ 
+    width: 15px;
     background-color: #b3b3b3;
     border-radius: 15px;
 }
 .text_description p::-webkit-scrollbar-thumb {
     background-image: url(../img/relog.png);
     background-size: contain;
-    width: 26px;
-    height: 26px;
+    width: 19px;
+    height: 19px;
     border-radius: 4px;
     background-color: transparent;
+    background-repeat: no-repeat;
 }
 /* .text_description{
     direction: rtl;
@@ -370,7 +371,7 @@ h4 {
 }
 
 .button_search {
-    background-color: #614d9a;
+    background-color: #5e269aff;
     color: white;
     border: none;
     font-size: 1.5em;
@@ -386,6 +387,60 @@ h4 {
 }
 .mb-iframe{
     display: none;
+}
+.content_nav{
+    width: 100% !important;
+    height: fit-content;
+    position: relative;
+}
+.share_button_header{
+    width: 25px;
+    height: 25px;
+    margin: 25px;
+    margin-left: 5px;
+    margin-left: auto;
+}
+.button_header{
+    margin-left: auto;
+    height: 25px;
+    margin-top: 25px;
+    background-color: #ff0066;
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+}
+.button_header2{
+    margin-left: auto;
+    height: 25px;
+    margin-top: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #ff0066 !important;
+}
+.tuenti_logo_header{
+    
+    height: 55px;
+    margin: 10px;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.search_one{
+    background-color: #ff0066;
+}
+.search_two{
+    background-color: white;
 }
 @media only screen and (max-width:1000px){
     .d-flex{
@@ -442,7 +497,7 @@ h4 {
     }
     .text_description p {
         height: 20vh !important;
-        overflow-y: scroll !important;
+        overflow-y: auto !important;
     }
     .contain_more_data .row{
         height: 100% !important;
