@@ -153,7 +153,7 @@ h4 {
 }
 .senal{
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 80%;
     text-align: right;
     right: 0;
@@ -1339,16 +1339,34 @@ h4 {
         margin-right: 15%;
     
     }
+    @media only screen and (max-width:1000px){
+        #instagramIcon{
+            top: 10%!important;
+        }
+
+        #facebookIcon{
+            margin-top: -20%!important;
+        }
+
+        #whatsappIcon{
+        }
+
+        #twitterIcon{
+            width: 60%!important;
+            bottom: 5%!important;
+        }
+
+    } 
     #instagramIcon{
         width: 45%;
-        height: 30%;
+        height: auto;
         position: absolute;
         top: 3%;
-        right: 20%;
+        right: 25%;
     }
     #facebookIcon{
         width: 70%;
-        height: 45%;
+        height: auto;
         position: absolute;
         left: -26%;
         margin-top: -5%;
@@ -1356,7 +1374,7 @@ h4 {
     }
     #whatsappIcon{
         width: 60%;
-        height: 40%;
+        height: auto;
         position: absolute;
         right: 10%;
         margin-top: 12%;
@@ -1364,7 +1382,7 @@ h4 {
     }
     #twitterIcon{
         width: 45%;
-        height: 30%;
+        height: auto;
         position: absolute;
         bottom: 10%;
         left: 0;
@@ -1377,117 +1395,58 @@ h4 {
     }
 
     .animation-target-socialIcon-facebook {
-        animation: animation-target-socialIcon-facebook 7s linear infinite both;
-        -webkit-animation: animation-target-socialIcon-facebook 7s linear infinite both;
+        animation: animation-target-socialIcon-facebook 3s linear infinite both;
+        -webkit-animation: animation-target-socialIcon-facebook 3s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
       @keyframes animation-target-socialIcon-facebook{
-        10%{
-          transform: scale(0.9) translateX(-10px);
-        }
-        20%{
-          transform: scale(1) translateX(0);
-        }
-        30%{
-          transform: scale(0.9) translateX(10px);
-        }
-        40%{
-          transform: scale(1) translateX(0);    
+        0%{
+          transform: scale(1);
         }
         50%{
-          transform: scale(0.9) translateX(-10px);    
-        }
-        60%{
-          transform: scale(1) translateX(0);    
-        }
-        70%{
-          transform: scale(0.9) translateX(10px);    
-        }
-        80%{
-          transform: scale(1) translateX(0);    
-        }
-        90%{
-          transform: scale(0.9) translateX(-10px);    
+          transform: scale(0.9);    
         }
         100%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1);    
         }
       }
     
       .animation-target-socialIcon-instagram {
-        animation: animation-target-socialIcon-instagram 7s linear infinite both;
-        -webkit-animation: animation-target-socialIcon-instagram 7s linear infinite both;
+        animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
+        -webkit-animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
       @keyframes animation-target-socialIcon-instagram{
-        10%{
-          transform: scale(1) translateX(-10px);
+        0%{
+          transform: scale(1) ;
         }
-        20%{
-          transform: scale(0.8) translateX(0);
-        }
-        30%{
-          transform: scale(1) translateX(10px);
-        }
-        40%{
-          transform: scale(0.8) translateX(0);    
-        }
+        
         50%{
-          transform: scale(1) translateX(-10px);    
+          transform: scale(0.8) ;    
         }
-        60%{
-          transform: scale(0.8) translateX(0);    
-        }
-        70%{
-          transform: scale(1) translateX(10px);    
-        }
-        80%{
-          transform: scale(0.8) translateX(0);    
+        100%{
+          transform: scale(1) ;    
         }
       }
 
 
       .animation-target-socialIcon-whatsapp {
-          animation: animation-target-socialIcon-whatsapp 7s linear infinite both;
-          -webkit-animation: animation-target-socialIcon-whatsapp 7s linear infinite both;
+          animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
+          -webkit-animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
           /* -webkit-animation: animation 2000ms linear infinite both; */
           /* animation: animation 2000ms linear infinite both; */
         }
         @keyframes animation-target-socialIcon-whatsapp{
           0%{
-            transform: scale(0.7) translateY(0);
-            }
-          10%{
-            transform: scale(1) translateY(-10px);
-          }
-          20%{
-            transform: scale(0.7) translateY(0);
-          }
-          30%{
-            transform: scale(1) translateY(10px);
-          }
-          40%{
-            transform: scale(0.7) translateY(0);    
+            transform: scale(1);    
           }
           50%{
-            transform: scale(1) translateY(-10px);    
-          }
-          60%{
-            transform: scale(0.7) translateY(0);    
-          }
-          70%{
-            transform: scale(1) translateY(10px);    
-          }
-          80%{
-            transform: scale(0.7) translateY(0);    
-          }
-          90%{
-            transform: scale(1) translateY(-10px);    
+            transform: scale(0.8);    
           }
           100%{
-            transform: scale(0.7) translateY(0);    
+            transform: scale(1);    
           }
         }
 
@@ -1499,35 +1458,14 @@ h4 {
             /* animation: animation 2000ms linear infinite both; */
           }
           @keyframes animation-target-socialIcon-twitter{
-            10%{
-              transform: scale(0.9) translateX(-10px);
-            }
-            20%{
-              transform: scale(1) translateX(0);
-            }
-            30%{
-              transform: scale(0.9) translateX(10px);
-            }
-            40%{
-              transform: scale(1) translateX(0);    
+            0%{
+              transform: scale(1);
             }
             50%{
-              transform: scale(0.9) translateX(-10px);    
-            }
-            60%{
-              transform: scale(1) translateX(0);    
-            }
-            70%{
-              transform: scale(0.9) translateX(10px);    
-            }
-            80%{
-              transform: scale(1) translateX(0);    
-            }
-            90%{
-              transform: scale(0.9) translateX(-10px);    
+              transform: scale(0.7);    
             }
             100%{
-              transform: scale(1) translateX(0);    
+              transform: scale(1);    
             }
           }
     .gpsIcon{
@@ -1623,51 +1561,39 @@ h4 {
           transform: scale(1) rotateZ(-20deg);    
         }
       }
-      .animation-aguja-icon {
-        animation: animation-aguja-icon 0.1s linear infinite both;
-        -webkit-animation: animation-aguja-icon 0.1s linear infinite both;
-        /* -webkit-animation: animation 2000ms linear infinite both; */
-        /* animation: animation 2000ms linear infinite both; */
-      }
-      @keyframes animation-aguja-icon{
-        10%{
-            position: absolute;
-            align-self: center;
-            left: 30%;
-            bottom: 55%;
-        }
-        50%{
-            position: absolute;
-            align-self: center;
-            left: 30%;
-            bottom: 50%;
-            transform: rotateZ(30deg);
-        }
-        100%{
-            position: absolute;
-            align-self: center;
-            left: 30%;
-            bottom: 55%;
-        }
-      }
+      
       #agujaIcon{
         position: absolute;
         align-self: center;
-        left: 30%;
-        bottom: 55%;
+        width: 40%;
+            transform: rotateZ(-180deg);
+            transform-origin:  left;
+        bottom: 58%;
+        left: 33%;
+
+		-webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+           -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+                   transition: all 1s ease-in-out;
       }
-      #masIcon{
+
+           
+        
+    #masIcon{
         position: absolute;
         align-self: center;
-        margin-top: 22%;
-        right: 28%;
+        margin-top: 30%;
+        height: 26%;
+        right: 0;
       }
       #taponIcon{
         position: absolute;
         align-self: center;
         left: 24%;
         bottom: 51%;
-      }
+        width: 18%;
+    }
 
       #izIcon{
         position: absolute;
@@ -1737,5 +1663,117 @@ h4 {
         }
         100%{
           transform: scale(1) translateX(0);    
+        }
+      }
+
+      @media only screen and (min-width:1000px){
+        #masIcon{
+            margin-right: 20%;
+        }
+        .animation-aguja-icon {
+            -webkit-transform: rotateZ(-45deg);
+			 -moz-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				 -o-transform: rotateZ(-45deg);
+						transform: rotateZ(-45deg);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+            animation: animation-aguja-icon 1s linear infinite both;
+            -webkit-animation: animation-aguja-icon 1s linear infinite both;
+            /* -webkit-animation: animation 2000ms linear infinite both; */
+            /* animation: animation 2000ms linear infinite both; */
+          }
+          @keyframes animation-aguja-icon{
+            0%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(-45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+            50%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+            100%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(-45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+          }
+
+    } 
+
+    @media only screen and (max-width:1000px){
+        #taponIcon{
+            left: 29%!important;
+            bottom: 54%!important;
+            width: 25%!important;
+        }
+        #agujaIcon{
+            bottom: 59%!important;
+            width: 60%!important;
+            transform: rotateZ(-180deg);
+            left: 40%!important;
+        }
+        .animation-aguja-icon {
+            -webkit-transform: rotateZ(-45deg);
+			 -moz-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				 -o-transform: rotateZ(-45deg);
+						transform: rotateZ(-45deg);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+            animation: animation-aguja-icon 1s linear infinite both;
+            -webkit-animation: animation-aguja-icon 1s linear infinite both;
+            /* -webkit-animation: animation 2000ms linear infinite both; */
+            /* animation: animation 2000ms linear infinite both; */
+          }
+          @keyframes animation-aguja-icon{
+            0%{
+                transform: rotateZ(-45deg);
+            }
+            50%{
+                transform: rotateZ(45deg);
+            }
+            100%{
+                transform: rotateZ(-45deg);
+            }
+          }
+
+    } 
+
+    .animation-mas-icon {
+        animation: animation-mas-icon 2s linear infinite both;
+        -webkit-animation: animation-mas-icon 2s linear infinite both;
+        /* -webkit-animation: animation 2000ms linear infinite both; */
+        /* animation: animation 2000ms linear infinite both; */
+      }
+      @keyframes animation-mas-icon{
+        0%{
+            transform: rotateZ(-10deg);
+        }
+        50%{
+            transform: rotateZ(10deg);
+        }
+        100%{
+            transform: rotateZ(-10deg);
         }
       }
