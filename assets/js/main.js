@@ -121,7 +121,7 @@ $(document).ready(function () {
     });
     /*CODE ANTONY*/
     
-    $("#button_row_2").click(function(){
+    $(".button_row_2").click(function(){
       if ($(window).width() < 960) {
           console.log("click mobil click");
           
@@ -172,7 +172,7 @@ $(document).ready(function () {
       
     });
 
-    $("#button_row_3").click(function(){
+    $(".button_row_3").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -217,7 +217,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_4").click(function(){
+    $(".button_row_4").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -262,7 +262,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_5").click(function(){
+    $(".button_row_5").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
@@ -307,7 +307,7 @@ $(document).ready(function () {
       }
       
     });
-    $("#button_row_6").click(function(){
+    $(".button_row_6").click(function(){
       if ($(window).width() < 960) {
         console.log("click mobil click");
           
