@@ -139,31 +139,94 @@ h4 {
 }
 .senal{
     position: absolute;
-    width: 80%;
-    margin-left: 25%;
-    height: 90%;
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    right: 0;
+    margin-right: 15%;
 
 }
 #signal1{
+    height: 0%;
+    z-index:100;
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
     margin-left: 0%;
 }
 #signal2{
-    margin-left: 10%;
+    height: 0%;
+    z-index:90;
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+    margin-left: 15%;
 }
 #signal3{
-    margin-left: 20%;
-}
-#signal4{
+    height: 0%;
+    z-index:80;
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
     margin-left: 30%;
 }
+#signal4{
+    height: 0%;
+    z-index:70;
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+    margin-left: 45%;
+}
 #signal5{
-    margin-left: 40%;
+    height: 0%;
+    z-index:60;
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+    margin-left: 60%;
+}
+#signal1.visible{
+    height: 10%;
+    z-index:100;
+    margin-left: 0%;
+}
+#signal2.visible{
+    height: 25%;
+    z-index:90;
+    margin-left: 15%;
+}
+#signal3.visible{
+    height: 40%;
+    z-index:80;
+    margin-left: 30%;
+}
+#signal4.visible{
+    height: 55%;
+    z-index:70;
+    margin-left: 45%;
+}
+#signal5.visible{
+    height: 70%;
+    z-index:60;
+    margin-left: 60%;
 }
 .img_tema2{
     bottom: 0;
     height: 2px;
     position: absolute;
-    width: 10%;
+    width: 20%;
+    left: 0px;
 }
 .img_tema {
     max-width: 100%;
