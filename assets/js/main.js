@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // $(document).scroll(function(e){
+	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
+	// 		console.log("true");			
+	// 	}else{
+  //     console.log("false");
+  //   }
+	// });	
+  $(window).scroll(function() {
+    
+    console.log($("#contein_row_2").scrollTop());
+    if(0 > $("body").scrollTop() && $("#contein_row_2").scrollTop() < $("body").scrollTop()){
+      $("search_two").addClass("d-none");
+      $("search_one").removeClass("d-none");
+    }else{
+      $("search_one").addClass("d-none");
+      $("search_two").removeClass("d-none");
+    }
+  });
   
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
