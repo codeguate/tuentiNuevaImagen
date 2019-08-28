@@ -263,7 +263,7 @@ h4 {
     height: 45%;
     width: auto;
     position: absolute;
-    margin-top: 55%;
+    margin-top: 45%;
     right: 30%;
 }
 
@@ -271,7 +271,7 @@ h4 {
     height: 80%;
     position: absolute;
     top: 18%;
-    left: 30%;
+    left: 25%;
     max-width: 26%;
     width: auto;
 }
@@ -587,11 +587,12 @@ h4 {
 
 .facebook_flotante{
     position: absolute;
-    width: 31%;
-    height: 35%;
+    width: 25%;
+    height: 30%;
     transform: rotateZ(-16deg);
-    top: 32%;
+    top: 31%;
     z-index: 100;
+    left: 4%;
 }
 
 .twitter_flotante{
@@ -599,7 +600,7 @@ h4 {
     width: 26%;
     height: 29%;
     transform: rotateZ(-16deg);
-    right: 14%;
+    right: 20%;
     z-index: 100;
     top: 3%;
 
