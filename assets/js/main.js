@@ -897,32 +897,32 @@ function animation(num){
 var rows = [
   {
     id:1,
-    keys:"",
-    div:"",
+    keys:"cobertura",
+    div:"contein_row_2",
     skills:""
   },
   {
     id:2,
-    keys:"",
-    div:"",
+    keys:"redes",
+    div:"contein_row_3",
     skills:""
   },
   {
     id:3,
-    keys:"",
-    div:"",
+    keys:"puntos de recarga",
+    div:"contein_row_4",
     skills:""
   },
   {
     id:4,
-    keys:"",
-    div:"",
+    keys:"velocidad",
+    div:"contein_row_5",
     skills:""
   },
   {
     id:5,
-    keys:"",
-    div:"",
+    keys:"combos",
+    div:"contein_row_6",
     skills:""
   },
 ]
