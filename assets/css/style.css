@@ -1702,38 +1702,38 @@ h4 {
       }
 
       .animation-target-izIcon {
-        animation: animation-target-izIcon 1s linear infinite both;
-        -webkit-animation: animation-target-izIcon 1s linear infinite both;
+        animation: animation-target-izIcon 7s linear infinite both;
+        -webkit-animation: animation-target-izIcon 7s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
       @keyframes animation-target-izIcon{
         10%{
-          transform: scale(0.7) translateX(-10px);
+          transform: scale(0.8) translateX(-10px);
         }
         20%{
           transform: scale(1) translateX(0);
         }
         30%{
-          transform: scale(0.7) translateX(10px);
+          transform: scale(0.8) translateX(10px);
         }
         40%{
           transform: scale(1) translateX(0);    
         }
         50%{
-          transform: scale(0.7) translateX(-10px);    
+          transform: scale(0.8) translateX(-10px);    
         }
         60%{
           transform: scale(1) translateX(0);    
         }
         70%{
-          transform: scale(0.7) translateX(10px);    
+          transform: scale(0.8) translateX(10px);    
         }
         80%{
           transform: scale(1) translateX(0);    
         }
         90%{
-          transform: scale(0.7) translateX(0);    
+          transform: scale(0.8) translateX(-10PX);    
         }
         100%{
           transform: scale(1) translateX(0);    
