@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   // $(document).scroll(function(e){
 	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
 	// 		console.log("true");			
@@ -7,16 +8,20 @@ $(document).ready(function () {
   //   }
 	// });	
   $(window).scroll(function() {
+    var windowHeight = $(window).scrollTop();
+    var contenido2 = $("#contein_row_2").offset();
+		contenido2 = contenido2.top;
     
-    console.log($("#contein_row_2").scrollTop());
-    if(0 > $("body").scrollTop() && $("#contein_row_2").scrollTop() < $("body").scrollTop()){
-      $("search_two").addClass("d-none");
-      $("search_one").removeClass("d-none");
+    if( contenido2 > windowHeight){
+      color();
     }else{
-      $("search_one").addClass("d-none");
-      $("search_two").removeClass("d-none");
+      white();
     }
+    
+    
+    
   });
+  
   
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -136,6 +141,96 @@ $(document).ready(function () {
         offset: 0 // move trigger to center of element
       })
       .setClassToggle("#trigger-row-11", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger12",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-12", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger13",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-13", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger14",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-14", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger15",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-15", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger16",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-16", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger17",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-17", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger18",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-18", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger19",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-19", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger20",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-20", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
@@ -825,32 +920,32 @@ function animation(num){
 var rows = [
   {
     id:1,
-    keys:"",
-    div:"",
+    keys:"cobertura",
+    div:"contein_row_2",
     skills:""
   },
   {
     id:2,
-    keys:"",
-    div:"",
+    keys:"redes",
+    div:"contein_row_3",
     skills:""
   },
   {
     id:3,
-    keys:"",
-    div:"",
+    keys:"puntos de recarga",
+    div:"contein_row_4",
     skills:""
   },
   {
     id:4,
-    keys:"",
-    div:"",
+    keys:"velocidad",
+    div:"contein_row_5",
     skills:""
   },
   {
     id:5,
-    keys:"",
-    div:"",
+    keys:"combos",
+    div:"contein_row_6",
     skills:""
   },
 ]
@@ -876,7 +971,28 @@ function buscar(text){
     // $("#alert1").addClass("fin");
     
 }
-
+function white(){
+  console.log("white");
+  $(".search_one").addClass("d-none");
+  $(".search_tre").addClass("d-none");
+  $(".search_two").removeClass("d-none");
+  $(".search_two").fadeIn();
+}
+function color(){
+  console.log("color");
+  $(".search_two").addClass("d-none");
+  $(".search_tre").addClass("d-none");
+  $(".search_one").removeClass("d-none");
+  $(".search_one").fadeIn();
+}
+function white_button(){
+  console.log("white_button");
+  $(".search_one").addClass("d-none");
+  $(".search_two").addClass("d-none");
+  $(".search_tre").removeClass("d-none");
+  $(".search_tre").fadeIn();
+  
+}
 // anime.timeline({loop: false})
 //   .add({
 //     targets: '.ml15 .word',
