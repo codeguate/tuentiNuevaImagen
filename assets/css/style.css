@@ -24,7 +24,7 @@ html , body{
     font-family: "Catamaran-extrabold";
     src: url(../fonts/Catamaran-ExtraBold.ttf);
 }
-.c-medium , body{
+.c-medium , body , html{
     font-family: "Catamaran-medium";
 }
 .c-light{
@@ -411,6 +411,17 @@ h4 {
     }
     .lg_title{
         font-size: 1em !important;
+    }
+    .contain_more_data{
+        background-image: url(../img/whtie.png);
+    }
+    .col_info_text {
+        background-color: #ff0066;
+        max-height: 100vh;
+        background-image: url(../img/whtie.png);
+        background-repeat: no-repeat;
+        background-size: 100% 34%;
+        background-position: bottom;
     }
 }
 
