@@ -121,6 +121,8 @@ $(document).ready(function () {
       // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
+
+
      
 
 
@@ -129,6 +131,58 @@ $(document).ready(function () {
     $("#resultadosInput").keyup(function () { 
         buscar($(this).val())
     });
+
+
+
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger-img-1",
+      triggerHook: 0.5, // show, when scrolled 10% into view
+      duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 300 // move trigger to center of element
+    })
+    .setClassToggle("#signal1", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger-img-2",
+      triggerHook: 0.5, // show, when scrolled 10% into view
+      duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 300 // move trigger to center of element
+    })
+    .setClassToggle("#signal2", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger-img-3",
+      triggerHook: 0.5, // show, when scrolled 10% into view
+      duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 300 // move trigger to center of element
+    })
+    .setClassToggle("#signal3", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+    
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger-img-4",
+      triggerHook: 0.5, // show, when scrolled 10% into view
+      duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 300 // move trigger to center of element
+    })
+    .setClassToggle("#signal4", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+    
+    new ScrollMagic.Scene({
+      triggerElement: "#trigger-img-5",
+      triggerHook: 0.5, // show, when scrolled 10% into view
+      duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 300 // move trigger to center of element
+    })
+    .setClassToggle("#signal5", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
     /*CODE ANTONY*/
     
     $("#button_row_2").click(function(){
