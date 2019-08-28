@@ -18,7 +18,7 @@ html , body{
 }
 @font-face{
     font-family: "Catamaran-semibold";
-    src: url(../fonts/SemiBold.ttf);
+    src: url(../fonts/Catamaran-SemiBold.ttf);
 }
 @font-face{
     font-family: "Catamaran-extrabold";
@@ -120,7 +120,7 @@ h4 {
     color: white;
     border: none;
     font-size: 1.5em;
-    font-family: "Catamaran-medium";
+    font-family: "Catamaran-light";
     border-radius: 5px;
 }
 .title_2{
@@ -439,13 +439,14 @@ h4 {
     width: 100%;
     z-index: 999;
 }
-.search_one{
-    background-color: #ff0066;
-}
-.search_two{
-    background-color: white;
-}
+
 @media only screen and (max-width:1000px){
+    .search_one{
+        background-color: #ff0066;
+    }
+    .search_two{
+        background-color: white;
+    }
     .d-flex{
         display: inherit !important;
     }
@@ -458,11 +459,14 @@ h4 {
     .h-90{
         height: fit-content !important;
     }
-    h2 , h4{
+    /* h2 , h4{
         font-size: 3.5em !important;
-    }
+    } */
     .col-img .d-flex{
         display: flex !important;
+    }
+    .col-img{
+        padding: 0 !important;
     }
 
     .button_more {
@@ -499,32 +503,35 @@ h4 {
         margin-left: 0;
     }
     .text_description p {
-        height: 20vh !important;
-        overflow-y: auto !important;
+        height: auto;
+        overflow-y: hidden !important;
     }
     .contain_more_data .row{
         height: 100% !important;
     }
     .ml15 .word {
-        font-size: 1.5em!important;
+        font-size: 1.12em!important;
     }
     .ml15{
-        width: 80% !important;
+        width: 90% !important;
         margin: auto;
 
         padding-top: 25vh;
     }
     .sub-title{
-        width: 80%;
+        width: 90%;
         margin: auto;
         padding: 5% 0%;
     }
     .description{
-        width: 80% !important; 
+        width: 90% !important; 
         margin: auto !important;
     }
     .col .description ,.text_description{
         width: 100% !important;
+    }
+    .text_description p{
+        line-height: 1;
     }
     .pl-15{
         padding-left: 0 !important;
@@ -585,6 +592,39 @@ h4 {
         background-repeat: no-repeat;
         background-size: 100% 34%;
         background-position: bottom;
+    }
+    .mb_t_1{
+        font-size: 4.5em !important;
+    }
+    .mb_s_1{
+        font-size: 2.4em !important;
+    }
+    .mb_s_2{
+        font-size: 2em !important;
+    }
+    .mb_t_2{
+        font-size: 4.2em !important;
+    }
+    .mb_s_3{
+        font-size: 2.5em !important;
+    }
+    .mb_t_3{
+        font-size: 4.4em;
+    }
+    .mb_s_4{
+        font-size: 3em;
+    }
+    .mb_t_4{
+        font-size: 4em;
+    }
+    #contein_row_6 .w-75{
+        width: 100% !important;
+    }
+    .mb_t_5{
+        font-size: 3em !important;
+    }
+    .mb_s_5{
+        font-size: 2.7em !important;
     }
 }
 
