@@ -111,6 +111,16 @@ $(document).ready(function () {
       // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger11",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-11", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
      
 
 
