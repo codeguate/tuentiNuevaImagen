@@ -121,6 +121,96 @@ $(document).ready(function () {
       // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger12",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-12", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger13",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-13", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger14",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-14", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger15",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-15", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger16",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-16", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger17",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-17", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger18",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-18", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger19",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-19", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger20",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-20", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
 
 
      
