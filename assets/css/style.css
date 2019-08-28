@@ -137,6 +137,34 @@ h4 {
     margin-right: 10%;
     cursor: pointer;
 }
+.senal{
+    position: absolute;
+    width: 80%;
+    margin-left: 25%;
+    height: 90%;
+
+}
+#signal1{
+    margin-left: 0%;
+}
+#signal2{
+    margin-left: 10%;
+}
+#signal3{
+    margin-left: 20%;
+}
+#signal4{
+    margin-left: 30%;
+}
+#signal5{
+    margin-left: 40%;
+}
+.img_tema2{
+    bottom: 0;
+    height: 2px;
+    position: absolute;
+    width: 10%;
+}
 .img_tema {
     max-width: 100%;
     height: auto !important;
@@ -781,6 +809,31 @@ h4 {
 						transition: all 1s ease-in-out;
 	}
 	#trigger-row-10.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-11 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-11.visible {
         opacity: 1;
         z-index:100;
         display:block;
