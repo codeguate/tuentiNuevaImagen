@@ -153,8 +153,8 @@ h4 {
 }
 .senal{
     position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
     text-align: right;
     right: 0;
     margin-right: 15%;
@@ -256,8 +256,11 @@ h4 {
     bottom: none;
 }
 .result{
-    height: 60%;
-    width: auto;
+    max-width: 100%;
+    height: 100% !important;
+    max-height: 100vh !important;
+    margin: auto !important;
+    display: block;
 }
 .signal{
     height: 45%;
@@ -265,6 +268,7 @@ h4 {
     position: absolute;
     margin-top: 45%;
     right: 30%;
+    z-index: 5;
 }
 
 .resultados{
@@ -274,6 +278,7 @@ h4 {
     left: 25%;
     max-width: 26%;
     width: auto;
+    z-index: 5;
 }
 
 .contain_more_data{
@@ -458,9 +463,9 @@ iframe{
     margin-top: 1% !important;
     margin-bottom: 3% !important;
 }
-.button_search  image{
-    margin-left: 5px;
-    margin-right: 11px;
+.button_search  img{
+    margin-left: 5px !important;
+    margin-right: 11px !important;
 }
 /* .text_description{
     margin-left: 0 !important;
@@ -506,6 +511,7 @@ iframe{
 .mb_t_5{
     font-size: 7em;
 }
+
 @media only screen and (max-width:1000px){
     .search_one{
         background-color: #ff0066;
@@ -587,7 +593,16 @@ iframe{
     .sub-title{
         width: 90%;
         margin: auto;
-        padding: 5% 0%;
+        padding: 5% 5%;
+    }
+    .sub-title{
+        font-size: 1.5em !important;
+    }
+    .button_search img{
+        margin-right: 0 !important;
+    }
+    .button_more{
+        margin-bottom: 10% !important;
     }
     .description{
         width: 90% !important; 
@@ -678,7 +693,7 @@ iframe{
         font-size: 4.4em;
     }
     .mb_s_4{
-        font-size: 3em;
+        font-size: 2em;
     }
     .mb_t_4{
         font-size: 4em;
@@ -690,33 +705,39 @@ iframe{
         font-size: 3em !important;
     }
     .mb_s_5{
-        font-size: 2.7em !important;
+        font-size: 2.2em !important;
+    }
+    .pl-10{
+        padding-left: 0 !important;
+    }
+    .share_button_header{
+        margin-left: 5px;
     }
 }
 
 .facebook_flotante{
     position: absolute;
     width: 25%;
-    height: 30%;
+    /* height: 30%; */
     transform: rotateZ(-16deg);
     top: 31%;
-    z-index: 100;
+    z-index: 1;
     left: 4%;
 }
 
 .twitter_flotante{
     position: absolute;
-    width: 26%;
-    height: 29%;
+    width: 25%;
+    /* height: 29%; */
     transform: rotateZ(-16deg);
     right: 20%;
-    z-index: 100;
+    z-index: 1;
     top: 3%;
 
 }
 
 .animation-target {
-    animation: animation-target 1.5s linear infinite both;
+    animation: animation-target 1s linear infinite both;
     backface-visibility: visible;
     /* -webkit-animation: animation 2000ms linear infinite both; */
     /* animation: animation 2000ms linear infinite both; */
@@ -1379,16 +1400,56 @@ iframe{
         margin-right: 15%;
     
     }
+    .speedContaner{
+        display: flex!important;
+        -webkit-align-items: center!important;
+        align-items: center!important;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        text-align: left;
+        right: 0;
+        margin-right: 15%;
+    
+    }
+    .comboContaner{
+        display: flex!important;
+        -webkit-align-items: center!important;
+        align-items: center!important;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        text-align: left;
+        right: 0;
+        margin-right: 15%;
+    
+    }
+    @media only screen and (max-width:1000px){
+        #instagramIcon{
+            top: 10%!important;
+        }
+
+        #facebookIcon{
+            margin-top: -20%!important;
+        }
+
+        
+        #twitterIcon{
+            width: 60%!important;
+            bottom: 5%!important;
+        }
+
+    } 
     #instagramIcon{
         width: 45%;
-        height: 30%;
+        height: auto;
         position: absolute;
         top: 3%;
-        right: 20%;
+        right: 25%;
     }
     #facebookIcon{
         width: 70%;
-        height: 45%;
+        height: auto;
         position: absolute;
         left: -26%;
         margin-top: -5%;
@@ -1396,7 +1457,7 @@ iframe{
     }
     #whatsappIcon{
         width: 60%;
-        height: 40%;
+        height: auto;
         position: absolute;
         right: 10%;
         margin-top: 12%;
@@ -1404,7 +1465,7 @@ iframe{
     }
     #twitterIcon{
         width: 45%;
-        height: 30%;
+        height: auto;
         position: absolute;
         bottom: 10%;
         left: 0;
@@ -1416,44 +1477,80 @@ iframe{
         margin-left: 5%;
     }
 
-    .animation-target-socialIcon {
-        animation: animation-target-socialIcon 7s linear infinite both;
-        -webkit-animation: animation-target-socialIcon 7s linear infinite both;
+    .animation-target-socialIcon-facebook {
+        animation: animation-target-socialIcon-facebook 3s linear infinite both;
+        -webkit-animation: animation-target-socialIcon-facebook 3s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
-      @keyframes animation-target-socialIcon{
-        10%{
-          transform: scale(0.9) translateX(-10px);
-        }
-        20%{
-          transform: scale(1) translateX(0);
-        }
-        30%{
-          transform: scale(0.9) translateX(10px);
-        }
-        40%{
-          transform: scale(1) translateX(0);    
+      @keyframes animation-target-socialIcon-facebook{
+        0%{
+          transform: scale(1);
         }
         50%{
-          transform: scale(0.9) translateX(-10px);    
-        }
-        60%{
-          transform: scale(1) translateX(0);    
-        }
-        70%{
-          transform: scale(0.9) translateX(10px);    
-        }
-        80%{
-          transform: scale(1) translateX(0);    
-        }
-        90%{
-          transform: scale(0.9) translateX(-10px);    
+          transform: scale(0.9);    
         }
         100%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1);    
         }
       }
+    
+      .animation-target-socialIcon-instagram {
+        animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
+        -webkit-animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
+        /* -webkit-animation: animation 2000ms linear infinite both; */
+        /* animation: animation 2000ms linear infinite both; */
+      }
+      @keyframes animation-target-socialIcon-instagram{
+        0%{
+          transform: scale(1) ;
+        }
+        
+        50%{
+          transform: scale(0.8) ;    
+        }
+        100%{
+          transform: scale(1) ;    
+        }
+      }
+
+
+      .animation-target-socialIcon-whatsapp {
+          animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
+          -webkit-animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
+          /* -webkit-animation: animation 2000ms linear infinite both; */
+          /* animation: animation 2000ms linear infinite both; */
+        }
+        @keyframes animation-target-socialIcon-whatsapp{
+          0%{
+            transform: scale(1);    
+          }
+          50%{
+            transform: scale(0.8);    
+          }
+          100%{
+            transform: scale(1);    
+          }
+        }
+
+
+        .animation-target-socialIcon-twitter {
+            animation: animation-target-socialIcon-twitter 5s linear infinite both;
+            -webkit-animation: animation-target-socialIcon-twitter 5s linear infinite both;
+            /* -webkit-animation: animation 2000ms linear infinite both; */
+            /* animation: animation 2000ms linear infinite both; */
+          }
+          @keyframes animation-target-socialIcon-twitter{
+            0%{
+              transform: scale(1);
+            }
+            50%{
+              transform: scale(0.7);    
+            }
+            100%{
+              transform: scale(1);    
+            }
+          }
     .gpsIcon{
         height: 75%;
         margin-right: auto;
@@ -1545,5 +1642,221 @@ iframe{
         }
         100%{
           transform: scale(1) rotateZ(-20deg);    
+        }
+      }
+      
+      #agujaIcon{
+        position: absolute;
+        align-self: center;
+        width: 40%;
+            transform: rotateZ(-180deg);
+            transform-origin:  left;
+        bottom: 58%;
+        left: 33%;
+
+		-webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+           -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+                   transition: all 1s ease-in-out;
+      }
+
+           
+        
+    #masIcon{
+        position: absolute;
+        align-self: center;
+        margin-top: 30%;
+        height: 26%;
+        right: 0;
+      }
+      #taponIcon{
+        position: absolute;
+        align-self: center;
+        left: 24%;
+        bottom: 51%;
+        width: 18%;
+    }
+
+      #izIcon{
+        position: absolute;
+        align-self: center;
+        left: -18%;
+        margin-top: 5%;
+        z-index: 1;
+      }
+
+      #centroIcon{
+        position: absolute;
+        align-self: center;
+        margin-top: -3%;
+        z-index: 2;
+        right: 32%;
+      }
+
+      #detIcon{
+        position: absolute;
+        align-self: center;
+        right: 12%;
+        margin-top: 5%;
+        z-index: 1;
+      }
+
+      #comboTituloIcon{
+        position: absolute;
+        align-self: center;
+        z-index: 3;
+        right: 11%;
+        margin-top: 5%;
+      }
+
+      .animation-target-izIcon {
+        animation: animation-target-izIcon 7s linear infinite both;
+        -webkit-animation: animation-target-izIcon 7s linear infinite both;
+        /* -webkit-animation: animation 2000ms linear infinite both; */
+        /* animation: animation 2000ms linear infinite both; */
+      }
+      @keyframes animation-target-izIcon{
+        10%{
+          transform: scale(0.8) translateX(-10px);
+        }
+        20%{
+          transform: scale(1) translateX(0);
+        }
+        30%{
+          transform: scale(0.8) translateX(10px);
+        }
+        40%{
+          transform: scale(1) translateX(0);    
+        }
+        50%{
+          transform: scale(0.8) translateX(-10px);    
+        }
+        60%{
+          transform: scale(1) translateX(0);    
+        }
+        70%{
+          transform: scale(0.8) translateX(10px);    
+        }
+        80%{
+          transform: scale(1) translateX(0);    
+        }
+        90%{
+          transform: scale(0.8) translateX(-10PX);    
+        }
+        100%{
+          transform: scale(1) translateX(0);    
+        }
+      }
+
+      @media only screen and (min-width:1000px){
+        #masIcon{
+            margin-right: 20%;
+        }
+        .animation-aguja-icon {
+            -webkit-transform: rotateZ(-45deg);
+			 -moz-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				 -o-transform: rotateZ(-45deg);
+						transform: rotateZ(-45deg);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+            animation: animation-aguja-icon 1s linear infinite both;
+            -webkit-animation: animation-aguja-icon 1s linear infinite both;
+            /* -webkit-animation: animation 2000ms linear infinite both; */
+            /* animation: animation 2000ms linear infinite both; */
+          }
+          @keyframes animation-aguja-icon{
+            0%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(-45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+            50%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+            100%{
+                position: absolute;
+                align-self: center;
+                width: 40%;
+                transform: rotateZ(-45deg);
+                transform-origin:  left;
+                bottom: 58%;
+                left: 33%;
+            }
+          }
+
+    } 
+
+    @media only screen and (max-width:1000px){
+        #taponIcon{
+            left: 29%!important;
+            bottom: 54%!important;
+            width: 25%!important;
+        }
+        #agujaIcon{
+            bottom: 59%!important;
+            width: 60%!important;
+            transform: rotateZ(-180deg);
+            left: 40%!important;
+        }
+        .animation-aguja-icon {
+            -webkit-transform: rotateZ(-45deg);
+			 -moz-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				 -o-transform: rotateZ(-45deg);
+						transform: rotateZ(-45deg);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+            animation: animation-aguja-icon 1s linear infinite both;
+            -webkit-animation: animation-aguja-icon 1s linear infinite both;
+            /* -webkit-animation: animation 2000ms linear infinite both; */
+            /* animation: animation 2000ms linear infinite both; */
+          }
+          @keyframes animation-aguja-icon{
+            0%{
+                transform: rotateZ(-45deg);
+            }
+            50%{
+                transform: rotateZ(45deg);
+            }
+            100%{
+                transform: rotateZ(-45deg);
+            }
+          }
+
+    } 
+
+    .animation-mas-icon {
+        animation: animation-mas-icon 2s linear infinite both;
+        -webkit-animation: animation-mas-icon 2s linear infinite both;
+        /* -webkit-animation: animation 2000ms linear infinite both; */
+        /* animation: animation 2000ms linear infinite both; */
+      }
+      @keyframes animation-mas-icon{
+        0%{
+            transform: rotateZ(-10deg);
+        }
+        50%{
+            transform: rotateZ(10deg);
+        }
+        100%{
+            transform: rotateZ(-10deg);
         }
       }
