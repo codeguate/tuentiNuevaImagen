@@ -75,3 +75,19 @@ fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
 fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
 > git rev-parse --show-toplevel
 fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+> git rev-parse --show-toplevel
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
