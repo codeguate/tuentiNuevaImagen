@@ -8,6 +8,13 @@ html , body{
 .bg-tuenti{
     background-color: #ff0066;
 }
+.title_contain,.title_des{
+    color: #ff0066;
+}
+.contein_respuestas_text ,.content_des{
+    color: #5e269aff;
+}
+
 @font-face{
     font-family: "Catamaran-medium";
     src: url(../fonts/Catamaran-Medium.ttf);
@@ -511,7 +518,74 @@ iframe{
 .mb_t_5{
     font-size: 7em;
 }
-
+.contain_data ul{
+    list-style: none;
+}
+.contein_col_1{
+    height: fit-content;
+    margin: auto;
+    width: fit-content;
+}
+.title_h4{
+    font-size: 2.3em;
+}
+.title_h2{
+    font-size: 4.5em;
+}
+.first_contain p{
+    font-size: 2em;
+    margin-bottom: 0 !important;
+}
+.contain_data ul{
+    padding-left: 8%;
+}
+.data_contain_des{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-left: 3px solid #5e269aff;
+    padding-left: 5%;
+}
+.title_des{
+    font-size: 2.7em;
+}
+.content_des {
+    font-size: 2.7em;
+    width: 70%;
+    text-align: left;
+}
+@media only screen and (min-width:1000px) and (max-width: 1500px){
+    .mb_t_1{
+        font-size: 7em;
+    }
+    .mb_s_1{
+        font-size: 3.6em;
+    }
+    .mb_t_2 {
+        font-size: 8em;
+    }
+    .mb_s_2 {
+        font-size: 4.1em;
+    }
+    .mb_t_3 {
+        font-size: 7.5em;
+    }
+    .mb_s_3 {
+        font-size: 4em;
+    }
+    .mb_t_4 {
+        font-size: 8em;
+    }
+    .mb_s_4 {
+        font-size: 4em;
+    }
+    .mb_t_5 {
+        font-size: 5em;
+    }
+    .mb_s_5 {
+        font-size: 3.7em;
+    }
+}
 @media only screen and (max-width:1000px){
     .search_one{
         background-color: #ff0066;
