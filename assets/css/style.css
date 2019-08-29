@@ -614,6 +614,24 @@ iframe{
     .contein_col_1{
         margin-left: 5%;
     }
+    .resultados{
+        height: 80%;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        font-size: 25pt;
+        max-width: 26%;
+        width: auto;
+        z-index: 5;
+    }
+
+    .resultadosBusqueda{
+        position: absolute;
+        border-radius: 10px;
+        width: 43vw;
+        height: 30%;
+        font-size: 10pt;
+    }
     .search_one{
         background-color: #ff0066;
     }
@@ -722,7 +740,7 @@ iframe{
         padding-left: 0 !important;
     }
     #animate1{
-        display: none !important;
+        height: 10vh !important;
     }
     #contein_row_1{
         height: 104vh !important;

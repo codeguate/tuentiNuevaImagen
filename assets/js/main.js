@@ -1,5 +1,14 @@
 $(document).ready(function () {
-  
+  var availableTags = [
+    "Cobertura en toda Guatemala",
+    "Redes Ilimitadas",
+    "Puntos de Recarga",
+    "El internet más veloz",
+    "Combos Impresionantes",
+  ];
+  $( "#resultadosInput" ).autocomplete({
+    source: availableTags
+  });
   // $(document).scroll(function(e){
 	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
 	// 		console.log("true");			
@@ -327,10 +336,14 @@ $(document).ready(function () {
 
 
 
-    $("#resultadosInput").keyup(async function () { 
+      $("#resultadosInput").keyup(async function () { 
         // await limpiarBusqueda();
         await buscar($(this).val())
     });
+    $("#trigger-row-25").click(function () { 
+      // await limpiarBusqueda();
+      buscar($("#resultadosInput").val())
+  });
 
 
 
@@ -1018,7 +1031,7 @@ function animation(num){
 var rows = [
   {
     id:1,
-    keys:"cobertura guatemala",
+    keys:"cobertura en toda guatemala",
     div:"contein_row_3",
     skills:"2",
     titulo:"Cobertura en toda Guatemala"
@@ -1039,7 +1052,7 @@ var rows = [
   },
   {
     id:4,
-    keys:"velocidad internet veloz",
+    keys:"el internet mas veloz velocidad",
     div:"contein_row_2",
     skills:"1",
     titulo:"El internet más veloz"
