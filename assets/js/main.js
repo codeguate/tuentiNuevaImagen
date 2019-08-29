@@ -1052,7 +1052,7 @@ var rows = [
   },
   {
     id:4,
-    keys:"el internet mas veloz velocidad",
+    keys:"el internet más veloz mas velocidad",
     div:"contein_row_2",
     skills:"1",
     titulo:"El internet más veloz"
