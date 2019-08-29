@@ -276,9 +276,17 @@ h4 {
     position: absolute;
     top: 18%;
     left: 25%;
+    font-size: 25pt;
     max-width: 26%;
     width: auto;
     z-index: 5;
+}
+
+.resultadosBusqueda{
+    position: absolute;
+    border-radius:10px;
+    width: 17vw;
+    height:20%;
 }
 
 .contain_more_data{
@@ -513,6 +521,26 @@ iframe{
 }
 
 @media only screen and (max-width:1000px){
+
+
+    .resultados{
+        height: 80%;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        font-size: 25pt;
+        max-width: 26%;
+        width: auto;
+        z-index: 5;
+    }
+
+    .resultadosBusqueda{
+        position: absolute;
+        border-radius: 10px;
+        width: 43vw;
+        height: 30%;
+        font-size: 10pt;
+    }
     .search_one{
         background-color: #ff0066;
     }
@@ -618,7 +646,7 @@ iframe{
         padding-left: 0 !important;
     }
     #animate1{
-        display: none !important;
+        height: 10vh;
     }
     #contein_row_1{
         height: 104vh !important;
@@ -1352,6 +1380,156 @@ iframe{
 						transform: none;
 	} 
     
+    #trigger-row-21 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-21.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-22 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-22.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-23 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-23.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-24 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-24.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-25 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-25.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
+    #trigger-row-26 {
+        opacity: 0;
+        z-index:-100;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#trigger-row-26.visible {
+        opacity: 1;
+        z-index:100;
+        display:block;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	} 
+    
     #trigger-row-11 {
         opacity: 0;
         z-index:-100;
@@ -1413,15 +1591,12 @@ iframe{
     
     }
     .comboContaner{
-        display: flex!important;
-        -webkit-align-items: center!important;
-        align-items: center!important;
         position: absolute;
-        width: 60%;
-        height: 100%;
-        text-align: left;
-        right: 0;
-        margin-right: 15%;
+    width: 70%;
+    height: 80%;
+    text-align: right;
+    right: 0;
+    margin-right: 15%;
     
     }
     @media only screen and (max-width:1000px){
@@ -1496,8 +1671,8 @@ iframe{
       }
     
       .animation-target-socialIcon-instagram {
-        animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
-        -webkit-animation: animation-target-socialIcon-instagram 1.5s linear infinite both;
+        animation: animation-target-socialIcon-instagram 5s linear infinite both;
+        -webkit-animation: animation-target-socialIcon-instagram 5s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
@@ -1516,8 +1691,8 @@ iframe{
 
 
       .animation-target-socialIcon-whatsapp {
-          animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
-          -webkit-animation: animation-target-socialIcon-whatsapp 1s linear infinite both;
+          animation: animation-target-socialIcon-whatsapp 3s linear infinite both;
+          -webkit-animation: animation-target-socialIcon-whatsapp 3s linear infinite both;
           /* -webkit-animation: animation 2000ms linear infinite both; */
           /* animation: animation 2000ms linear infinite both; */
         }
@@ -1568,38 +1743,38 @@ iframe{
     margin-top: 5%;
     }
     .animation-twitter-icon {
-        animation: animation-twitter-icon 7s linear infinite both;
-        -webkit-animation: animation-twitter-icon 7s linear infinite both;
+        animation: animation-twitter-icon 10s linear infinite both;
+        -webkit-animation: animation-twitter-icon 10s linear infinite both;
         /* -webkit-animation: animation 2000ms linear infinite both; */
         /* animation: animation 2000ms linear infinite both; */
       }
       @keyframes animation-twitter-icon{
         10%{
-          transform: scale(1.2) rotateZ(20deg);
+          transform: scale(1.2) rotateZ(-20deg);
         }
         20%{
           transform: scale(1);
         }
         30%{
-          transform: scale(1.2) rotateZ(20deg);
+          transform: scale(1.2) rotateZ(-20deg);
         }
         40%{
           transform: scale(1);    
         }
         50%{
-          transform: scale(1.2) rotateZ(20deg);    
+          transform: scale(1.2) rotateZ(-20deg);    
         }
         60%{
           transform: scale(1);    
         }
         70%{
-          transform: scale(1.2) rotateZ(20deg);    
+          transform: scale(1.2) rotateZ(-20deg);    
         }
         80%{
           transform: scale(1);    
         }
         90%{
-          transform: scale(1.2) rotateZ(20deg);    
+          transform: scale(1.2) rotateZ(-20deg);    
         }
         100%{
           transform: scale(1);    
@@ -1651,7 +1826,7 @@ iframe{
         width: 40%;
             transform: rotateZ(-180deg);
             transform-origin:  left;
-        bottom: 58%;
+        top: 45%;
         left: 33%;
 
 		-webkit-transition: all 1s ease-in-out;
@@ -1672,42 +1847,47 @@ iframe{
       }
       #taponIcon{
         position: absolute;
-        align-self: center;
-        left: 24%;
-        bottom: 51%;
-        width: 18%;
+    align-self: center;
+    display: none;
+    left: 23%;
+    width: 20%;
+    top: 40%;
     }
 
       #izIcon{
         position: absolute;
         align-self: center;
-        left: -18%;
-        margin-top: 5%;
+        left: -6%;
         z-index: 1;
+        top: 35%;
+        width: 35%;
       }
 
       #centroIcon{
         position: absolute;
-        align-self: center;
-        margin-top: -3%;
-        z-index: 2;
-        right: 32%;
+    align-self: center;
+    top: 5%;
+    z-index: 2;
+    right: 15%;
+    width: 80%;
       }
 
       #detIcon{
         position: absolute;
         align-self: center;
-        right: 12%;
-        margin-top: 5%;
+        right: 6%;
         z-index: 1;
+        top: 34%;
+        width: 35%;
       }
 
       #comboTituloIcon{
         position: absolute;
         align-self: center;
         z-index: 3;
-        right: 11%;
-        margin-top: 5%;
+        right: 8%;
+        height: 26%;
+        top: 38%;
       }
 
       .animation-target-izIcon {
@@ -1718,34 +1898,34 @@ iframe{
       }
       @keyframes animation-target-izIcon{
         10%{
-          transform: scale(0.8) translateX(-10px);
+          transform: scale(0.8);
         }
         20%{
-          transform: scale(1) translateX(0);
+          transform: scale(1) ;
         }
         30%{
-          transform: scale(0.8) translateX(10px);
+          transform: scale(0.8) ;
         }
         40%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1) ;    
         }
         50%{
-          transform: scale(0.8) translateX(-10px);    
+          transform: scale(0.8);    
         }
         60%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1) ;    
         }
         70%{
-          transform: scale(0.8) translateX(10px);    
+          transform: scale(0.8) ;    
         }
         80%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1) ;    
         }
         90%{
-          transform: scale(0.8) translateX(-10PX);    
+          transform: scale(0.8);    
         }
         100%{
-          transform: scale(1) translateX(0);    
+          transform: scale(1) ;    
         }
       }
 
@@ -1753,6 +1933,12 @@ iframe{
         #masIcon{
             margin-right: 20%;
         }
+        .tap{
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 15%;
+          }
         .animation-aguja-icon {
             -webkit-transform: rotateZ(-45deg);
 			 -moz-transform: rotateZ(-45deg);
@@ -1802,13 +1988,48 @@ iframe{
     } 
 
     @media only screen and (max-width:1000px){
+        .tap{
+            position: absolute;
+            top: 0;
+            width: 95%;
+            height: 100vh!important;
+            margin-top: 4%!important;
+            right: 7%;
+            z-index: 2;
+          }
+          #animate1{
+              height: 35vh!important;
+              overflow-y: hidden;
+          }
+        #izIcon{
+            width: 45%!important;
+    left: -10%!important;
+    margin-top: 5%;
+          }
+        #centroIcon{
+            margin-top: 15%!important;
+    right: 8%!important;
+    width: 83%!important;
+          }
+        #detIcon{
+            right: -10%!important;
+            margin-top: 10%!important;
+            width: 40%!important;
+          }
+        #comboTituloIcon{
+            height: 33%!important;
+            right: -10%!important;
+            width: auto!important;
+            margin-top: 10%!important;
+          }
         #taponIcon{
             left: 29%!important;
             bottom: 54%!important;
             width: 25%!important;
+            display: none;
         }
         #agujaIcon{
-            bottom: 59%!important;
+            top: 40%!important;
             width: 60%!important;
             transform: rotateZ(-180deg);
             left: 40%!important;
@@ -1860,3 +2081,5 @@ iframe{
             transform: rotateZ(-10deg);
         }
       }
+
+      
