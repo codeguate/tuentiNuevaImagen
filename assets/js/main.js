@@ -921,75 +921,65 @@ function animation(num){
 var rows = [
   {
     id:1,
-    keys:"cobertura guatemala",
+    keys:"cobertura",
     div:"contein_row_3",
-    skills:"2",
+    skills:"",
     titulo:"Cobertura en toda Guatemala"
   },
   {
     id:2,
-    keys:"redes ilimitadas",
+    keys:"redes",
     div:"contein_row_5",
-    skills:"1",
+    skills:"",
     titulo:"Redes Ilimitadas"
   },
   {
     id:3,
     keys:"puntos de recarga",
     div:"contein_row_4",
-    skills:"1",
+    skills:"",
     titulo:"Puntos de Recarga"
   },
   {
     id:4,
-    keys:"velocidad internet veloz",
+    keys:"velocidad",
     div:"contein_row_2",
-    skills:"1",
+    skills:"",
     titulo:"El internet más veloz"
   },
   {
     id:5,
-    keys:"combos impresionantes",
+    keys:"combos",
     div:"contein_row_6",
-    skills:"2",
+    skills:"",
     titulo:"Combos Impresionantes"
   },
 ]
-async function limpiarBusqueda(i){
+async function limpiarBusqueda(){
+      await $("#alert1").animate({bottom:'0%'}, 100);
+      await $("#alert2").animate({bottom:'0%'}, 100);
+      await $("#alert3").animate({bottom:'0%'}, 100);
+      await $("#alert4").animate({bottom:'0%'}, 100);
+      await $("#alert5").animate({bottom:'0%'}, 100);
 
-      if(i<1){
-        await $("#alert1").animate({bottom:'0%'}, 100);
+      await setTimeout(() => {
         $("#alert1").removeClass("d-flex");
         $("#alert1").addClass("d-none");
-      }    
-      if(i<2){
-        await $("#alert2").animate({bottom:'0%'}, 100);
         $("#alert2").removeClass("d-flex");
         $("#alert2").addClass("d-none");
-      }
-      if(i<3){
-        await $("#alert3").animate({bottom:'0%'}, 100);
         $("#alert3").removeClass("d-flex");
         $("#alert3").addClass("d-none");
-      }
-      if(i<4){
-        await $("#alert4").animate({bottom:'0%'}, 100);
         $("#alert4").removeClass("d-flex");
         $("#alert4").addClass("d-none");
-      }
-      if(i<5){
-        await $("#alert5").animate({bottom:'0%'}, 100);
         $("#alert5").removeClass("d-flex");
         $("#alert5").addClass("d-none");
-      }
-
-      
+      }, 150);
 }
 function buscar(text){
     if(text==""){
-      limpiarBusqueda(0)
+      limpiarBusqueda()
     }else{
-      // console.log(text);
+      console.log(text);
       var temp = []
       var result = rows.forEach(element => {
           var fin = element.keys.indexOf(text)
@@ -1001,32 +991,26 @@ function buscar(text){
       // if(element.keys==text){
       //   return 
       // }
-      // console.log(result);
-      // console.log(result.length);
+      console.log(result);
+      console.log(result.length);
       if(result.length>0 && result.length<=5){
-        limpiarBusqueda(result.length);
         result.forEach((element,l) => {
-
-            var res = '<span class="m-auto w-100"><a style="color:#ffffff;" href="#'+element.div+'"><strong>'+element.titulo+'</strong></a></span>'
+          var res = '<span class="m-auto w-100"><a style="color:#ffffff;" href="#'+element.div+'"><strong>'+element.titulo+'</strong></a></span>'
+          if($("#alert"+(l+1)).hasClass("d-none")){
             $("#alert"+(l+1)).removeClass("d-none");
             $("#alert"+(l+1)).addClass("d-flex");
-            $("#alert"+(l+1)).html('');
             $("#alert"+(l+1)).html(res);
-            var lengt = l>0?l:1
-            var palabras = result[lengt-1].skills
-            var palabra = element.skills
-            console.log(palabras);
-            console.log(palabra);
-            
-              $("#alert"+(l+1)).animate({bottom:(80-(20*(l)))+'%'}, 300);
+
+            $("#alert"+(l+1)).animate({bottom:(80-(15*(l)))+'%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'65%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'50%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'35%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'20%'}, 300);
+          }
         });
         
       }else{
-        limpiarBusqueda(0);
+        limpiarBusqueda();
       }
       
       
