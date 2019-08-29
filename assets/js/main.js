@@ -36,10 +36,10 @@ $(document).ready(function () {
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
-        triggerHook: 0.1, // show, when scrolled 10% into view
+        triggerHook: 0.7, // show, when scrolled 10% into view
         reverse:false,
         duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: -150 // move trigger to center of element
+        offset: 0 // move trigger to center of element
       })
       .setClassToggle("#trigger-row-1", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
@@ -47,10 +47,10 @@ $(document).ready(function () {
 
       new ScrollMagic.Scene({
         triggerElement: "#trigger2",
-        triggerHook: 0.1, // show, when scrolled 10% into view
+        triggerHook: 0.7, // show, when scrolled 10% into view
         reverse:false,
         duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: -165 // move trigger to center of element
+        offset: 0 // move trigger to center of element
       })
       .setClassToggle("#trigger-row-2", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
@@ -58,10 +58,10 @@ $(document).ready(function () {
 
       new ScrollMagic.Scene({
         triggerElement: "#trigger3",
-        triggerHook: 0.1, // show, when scrolled 10% into view
+        triggerHook: 0.7, // show, when scrolled 10% into view
         reverse:false,
         duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: -230 // move trigger to center of element
+        offset: 0 // move trigger to center of element
       })
       .setClassToggle("#trigger-row-3", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
@@ -251,6 +251,72 @@ $(document).ready(function () {
         offset: 0 // move trigger to center of element
       })
       .setClassToggle("#trigger-row-20", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger21",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-21", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger22",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-22", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger23",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-23", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger24",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-24", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger25",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-25", "visible") // add class to reveal
+      // .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger26",
+        triggerHook: 0.7, // show, when scrolled 10% into view
+        reverse:false,
+        duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 0 // move trigger to center of element
+      })
+      .setClassToggle("#trigger-row-26", "visible") // add class to reveal
       // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
@@ -745,7 +811,7 @@ $(document).ready(function () {
 function animation(num){
   switch(num){
     case 2:
-      console.log("execute row 2");
+      // console.log("execute row 2");
       $("#contein_row_2 .col-img").animate({
         opacity: 0.25,
         top: "-=50",
@@ -770,7 +836,7 @@ function animation(num){
       });
     break;
     case 3:
-        console.log("execute row 3");
+        // console.log("execute row 3");
         $("#contein_row_3 .col-img").animate({
           opacity: 0.25,
           top: "-=50",
@@ -795,7 +861,7 @@ function animation(num){
         });
     break;
     case 4:
-        console.log("execute row 4");
+        // console.log("execute row 4");
         $("#contein_row_4 .col-img").animate({
           opacity: 0.25,
           top: "-=50",
@@ -820,7 +886,7 @@ function animation(num){
         });
     break;
     case 5:
-        console.log("execute row 5");
+        // console.log("execute row 5");
         $("#contein_row_5 .col-img").animate({
           opacity: 0.25,
           top: "-=50",
@@ -1017,6 +1083,7 @@ async function limpiarBusqueda(i){
       
 }
 function buscar(text){
+  text = text.toLowerCase()
     if(text==""){
       limpiarBusqueda(0)
     }else{
@@ -1046,10 +1113,17 @@ function buscar(text){
             var lengt = l>0?l:1
             var palabras = result[lengt-1].skills
             var palabra = element.skills
-            console.log(palabras);
-            console.log(palabra);
-            
+            // console.log(palabras);
+            // console.log(palabra);
+            var w = window.innerWidth;
+
+            console.log(w);
+            if(w>1000){
               $("#alert"+(l+1)).animate({bottom:(80-(20*(l)))+'%'}, 300);
+            }  else{
+              $("#alert"+(l+1)).animate({bottom:(80-(30*(l)))+'%'}, 300);
+
+            }          
             // $("#alert"+(l+1)).animate({bottom:'65%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'50%'}, 300);
             // $("#alert"+(l+1)).animate({bottom:'35%'}, 300);
