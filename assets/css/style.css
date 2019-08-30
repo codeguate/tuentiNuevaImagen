@@ -2146,11 +2146,11 @@ iframe{
     @media only screen and (max-width:1000px){
         .titulo-text{
             width: 80%!important;
-            margin-left: 10%!important;
+            margin-left: 5%!important;
            
         }
         .pruebaPadding{
-            padding-top: 20%!important;
+            padding-top: 15%!important;
         }
         .text_description {
             height: auto!important;

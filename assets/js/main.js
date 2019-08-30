@@ -340,7 +340,12 @@ $(document).ready(function () {
         // await limpiarBusqueda();
         await buscar($(this).val())
     });
-    $("#trigger-row-25").click(function () { 
+
+    $(".animacionRow25").click(function () { 
+      // await limpiarBusqueda();
+      buscar($("#resultadosInput").val())
+  });
+    $("#trigger-row-search").click(function () { 
       // await limpiarBusqueda();
       buscar($("#resultadosInput").val())
   });
