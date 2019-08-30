@@ -282,10 +282,9 @@ h4 {
     height: 80%;
     position: absolute;
     top: 18%;
-    left: 25%;
-    font-size: 25pt;
-    max-width: 26%;
-    width: auto;
+    left: 30%;
+    font-size: 2em;
+    width: 100%;
     z-index: 5;
 }
 
@@ -334,9 +333,10 @@ h4 {
     width: 90% !important;
     margin-left: 0;
 }
-.text_description p{
+.text_description {
     overflow-y: auto;
     height: 32vh;
+    direction: rtl;
 }
 .share_icon{
     margin-left: auto;
@@ -351,21 +351,29 @@ h4 {
     background-color: #ff0066;
     max-height: 100vh;
 }
+.text_description p {
+    direction: ltr;
+    padding-left: 0.5rem;
+}
 
 /*scrollbar*/
-.text_description p::-webkit-scrollbar {
-    width: 15px;
-    background-color: #b3b3b3;
+.text_description::-webkit-scrollbar {
+    width: 25px;
+    background-image: url(https://www.htmlcsscolor.com/preview/icon/B3B3B3.png);
+    background-repeat: repeat-y;
+    background-size: 15% 100%;
     border-radius: 15px;
+    background-position-x: center;
 }
-.text_description p::-webkit-scrollbar-thumb {
+.text_description::-webkit-scrollbar-thumb {
     background-image: url(../img/relog.png);
-    background-size: contain;
-    width: 19px;
-    height: 19px;
+    background-size: 100%;
+    width: 58px;
+    height: 23px;
     border-radius: 4px;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-position-x: center;
 }
 /* .text_description{
     direction: rtl;
@@ -374,15 +382,22 @@ h4 {
     direction: rtl;
 } */
 .data-text::-webkit-scrollbar{
-    width: 10px;
-    padding: 2px;     /* Tamaño del scroll en vertical */    /* heigth Tamaño del scroll en horizontal */ 
-    background-color: white;
+    width: 25px;
+    background-image: url(https://www.htmlcsscolor.com/preview/icon/B3B3B3.png);
+    background-repeat: repeat-y;
+    background-size: 15% 100%;
     border-radius: 15px;
+    background-position-x: center;
 }
 .data-text::-webkit-scrollbar-thumb{
-    width: 8px;     /* Tamaño del scroll en vertical */    /* heigth Tamaño del scroll en horizontal */ 
-    background-color: #b3b3b3;
-    border-radius: 15px;
+    background-image: url(../img/relog.png);
+    background-size: 100%;
+    width: 58px;
+    height: 23px;
+    border-radius: 4px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 /*End scrollbar*/
 .d-contents{
@@ -601,6 +616,10 @@ iframe{
     }
 }
 @media only screen and (max-width:1000px){
+    .circuloBlanco{
+        width: 100%!important;
+        height: auto!important;
+    }
     .title_h4 {
         font-size: 1.4em;
     }
@@ -615,7 +634,7 @@ iframe{
         margin-left: 5%;
     }
     .resultados{
-        height: 80%;
+        width: 100%;
         position: absolute;
         top: 40%;
         left: 25%;
@@ -852,7 +871,7 @@ iframe{
     width: 25%;
     /* height: 29%; */
     transform: rotateZ(-16deg);
-    right: 20%;
+    right: 15%;
     z-index: 1;
     top: 3%;
 
@@ -1785,8 +1804,8 @@ iframe{
 
 
       .animation-target-socialIcon-whatsapp {
-          animation: animation-target-socialIcon-whatsapp 3s linear infinite both;
-          -webkit-animation: animation-target-socialIcon-whatsapp 3s linear infinite both;
+          animation: animation-target-socialIcon-whatsapp 7s linear infinite both;
+          -webkit-animation: animation-target-socialIcon-whatsapp 7s linear infinite both;
           /* -webkit-animation: animation 2000ms linear infinite both; */
           /* animation: animation 2000ms linear infinite both; */
         }
@@ -1936,7 +1955,7 @@ iframe{
         position: absolute;
         align-self: center;
         margin-top: 30%;
-        height: 26%;
+        width: 90%;
         right: 0;
       }
       #taponIcon{
@@ -1960,10 +1979,10 @@ iframe{
       #centroIcon{
         position: absolute;
     align-self: center;
-    top: 5%;
+    top: -10%;
     z-index: 2;
     right: 15%;
-    width: 80%;
+    width: 90%;
       }
 
       #detIcon{
@@ -1980,7 +1999,7 @@ iframe{
         align-self: center;
         z-index: 3;
         right: 8%;
-        height: 26%;
+        width: 100%;
         top: 38%;
       }
 
@@ -2022,8 +2041,17 @@ iframe{
           transform: scale(1) ;    
         }
       }
+     
 
       @media only screen and (min-width:1000px){
+        .circuloBlanco{
+            width: 60%!important;
+            height: auto!important;
+            position: absolute;
+            right: 10%;
+            top: 10%;
+            left: 0px;
+        }
         #masIcon{
             margin-right: 20%;
         }
@@ -2080,15 +2108,76 @@ iframe{
           }
 
     } 
-
+    @media only screen and (min-width:1900px){
+        .resultados{
+            left: 30%!important;
+        }
+    }
+    @media only screen and (max-width:1700px) and (min-width:1300px){
+        .resultados{
+            left: 20%!important;
+        }
+    }
+    @media only screen and (max-width:1300px) and (min-width:1000px){
+        .resultados{
+            left: 16%!important;
+        }
+        .resultadosBusqueda {
+            width: 45%;
+        }
+        #agujaIcon {
+            top:40%!important;
+        }
+        .circuloBlanco{
+            width: 80%!important;
+            height: auto!important;
+            position: absolute;
+            right: 20%;
+            top: 10%;
+            left: 0px;
+        }
+        .tap{
+            right: 10%!important;
+        }
+        .facebook_flotante {
+            left: 0px!important;
+        }
+    }
     @media only screen and (max-width:1000px){
+        .titulo-text{
+            width: 80%!important;
+            margin-left: 10%!important;
+           
+        }
+        .pruebaPadding{
+            padding-top: 10%!important;
+        }
+        .text_description {
+            height: auto!important;
+        }
+        #trigger-row-26.visible {
+            width: 100%!important;
+        }
+
+        .result{
+            width: 100% !important;
+            height: auto!important;
+        }
+        .twitter_flotante {
+            right: 0px!important;
+        }
+        .facebook_flotante {
+            left: 0px!important;
+        }
+        #masIcon{
+            width: 100%;
+          }
         .tap{
             position: absolute;
             top: 0;
             width: 95%;
             height: 100vh!important;
             margin-top: 4%!important;
-            right: 7%;
             z-index: 2;
           }
           #animate1{
@@ -2101,9 +2190,9 @@ iframe{
     margin-top: 5%;
           }
         #centroIcon{
-            margin-top: 15%!important;
+            margin-top: 5%!important;
     right: 8%!important;
-    width: 83%!important;
+    width: 90%!important;
           }
         #detIcon{
             right: -10%!important;
@@ -2111,9 +2200,8 @@ iframe{
             width: 40%!important;
           }
         #comboTituloIcon{
-            height: 33%!important;
             right: -10%!important;
-            width: auto!important;
+            width: 120%!important;
             margin-top: 10%!important;
           }
         #taponIcon{

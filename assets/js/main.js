@@ -1,10 +1,10 @@
 $(document).ready(function () {
   var availableTags = [
+    "Velocidad de internet",
     "Cobertura en toda Guatemala",
-    "Redes Ilimitadas",
-    "Puntos de Recarga",
-    "El internet más veloz",
-    "Combos Impresionantes",
+    "Puntos de recarga",
+    "Redes sociales ilimitadas",
+    "Combos con más GB",
   ];
   $( "#resultadosInput" ).autocomplete({
     source: availableTags
@@ -320,7 +320,7 @@ $(document).ready(function () {
 
       new ScrollMagic.Scene({
         triggerElement: "#trigger26",
-        triggerHook: 0.7, // show, when scrolled 10% into view
+        triggerHook: 0.8, // show, when scrolled 10% into view
         reverse:false,
         duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
         offset: 0 // move trigger to center of element
@@ -1038,10 +1038,10 @@ var rows = [
   },
   {
     id:2,
-    keys:"redes ilimitadas",
+    keys:"redes sociales ilimitadas",
     div:"contein_row_5",
     skills:"1",
-    titulo:"Redes Ilimitadas"
+    titulo:"Redes sociales ilimitadas"
   },
   {
     id:3,
@@ -1052,17 +1052,17 @@ var rows = [
   },
   {
     id:4,
-    keys:"el internet más veloz mas velocidad",
+    keys:"velocidad de internet",
     div:"contein_row_2",
     skills:"1",
-    titulo:"El internet más veloz"
+    titulo:"Velocidad de internet"
   },
   {
     id:5,
-    keys:"combos impresionantes",
+    keys:"combos con más gb",
     div:"contein_row_6",
     skills:"2",
-    titulo:"Combos Impresionantes"
+    titulo:"Combos con más GB"
   },
 ]
 async function limpiarBusqueda(i){
