@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var availableTags = [
-    "Velocidad de internet",
-    "Cobertura en toda Guatemala",
+    // "Velocidad de internet",
+    "Cobertura",
     "Puntos de recarga",
     "Redes sociales ilimitadas",
     "Combos con más GB",
@@ -1036,10 +1036,10 @@ function animation(num){
 var rows = [
   {
     id:1,
-    keys:"cobertura en toda guatemala",
+    keys:"cobertura",
     div:"contein_row_3",
     skills:"2",
-    titulo:"Cobertura en toda Guatemala"
+    titulo:"Cobertura"
   },
   {
     id:2,
@@ -1055,13 +1055,13 @@ var rows = [
     skills:"1",
     titulo:"Puntos de Recarga"
   },
-  {
-    id:4,
-    keys:"velocidad de internet",
-    div:"contein_row_2",
-    skills:"1",
-    titulo:"Velocidad de internet"
-  },
+  // {
+  //   id:4,
+  //   keys:"velocidad de internet",
+  //   div:"contein_row_2",
+  //   skills:"1",
+  //   titulo:"Velocidad de internet"
+  // },
   {
     id:5,
     keys:"combos con más gb",

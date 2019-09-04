@@ -325,6 +325,7 @@ h4 {
     color: white;
     text-align: justify;
     padding-right: 20px;
+    font-size: 2rem;
 }
 .data-text{
     overflow-y: auto;
@@ -337,6 +338,7 @@ h4 {
     overflow-y: auto;
     height: 32vh;
     direction: rtl;
+    font-size: 2rem!important;
 }
 .share_icon{
     margin-left: auto;
@@ -510,7 +512,7 @@ iframe{
     padding-bottom: 10%;
 }
 .mb_t_1{
-    font-size: 10em;
+    font-size: 10em!important;
 }
 .mb_s_1{
     font-size: 5.2em;
@@ -539,7 +541,7 @@ iframe{
     font-size: 5em;
 }
 .mb_t_5{
-    font-size: 7em;
+    font-size: 10em;
 }
 .contain_data ul{
     list-style: none;
@@ -615,7 +617,16 @@ iframe{
         font-size: 3.7em;
     }
 }
+@media only screen and (max-width:1700px){
+    .mb_t_3{
+        line-height: 1!important;
+    }
+}
 @media only screen and (max-width:1000px){
+    
+    .description-more-text{
+        font-size: 1rem!important;
+    }
     .circuloBlanco{
         width: 100%!important;
         height: auto!important;
@@ -863,7 +874,7 @@ iframe{
     transform: rotateZ(-16deg);
     top: 31%;
     z-index: 1;
-    left: 4%;
+    left: 0%;
 }
 
 .twitter_flotante{
