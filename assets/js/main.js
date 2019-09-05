@@ -7,8 +7,10 @@ $(document).ready(function () {
     "Combos con más GB",
   ];
   $( "#resultadosInput" ).autocomplete({
-    source: availableTags
+    source: availableTags,
+    select: showLabel
   });
+
   // $(document).scroll(function(e){
 	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
 	// 		console.log("true");			
@@ -41,7 +43,11 @@ $(document).ready(function () {
         });
     });
 });
-
+    function showLabel(event, ui) {
+      // console.log(ui.item.label);
+      
+           buscar(ui.item.label)
+            }
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
@@ -1135,7 +1141,7 @@ function buscar(text){
             // console.log(palabra);
             var w = window.innerWidth;
 
-            console.log(w);
+            // console.log(w);
             if(w>1000){
               $("#alert"+(l+1)).animate({bottom:(80-(20*(l)))+'%'}, 300);
             }  else{

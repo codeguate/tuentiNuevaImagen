@@ -336,9 +336,9 @@ h4 {
 }
 .text_description {
     overflow-y: auto;
-    height: 32vh;
+    height: 35vh;
     direction: rtl;
-    font-size: 2rem!important;
+    font-size: 1.5rem!important;
 }
 .share_icon{
     margin-left: auto;
