@@ -325,7 +325,7 @@ h4 {
     color: white;
     text-align: justify;
     padding-right: 20px;
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 .data-text{
     overflow-y: auto;
@@ -586,6 +586,7 @@ iframe{
     margin-right: auto;
 }
 @media only screen and (min-width:1000px) and (max-width: 1500px){
+    
     .mb_t_1{
         font-size: 7em;
     }
@@ -2055,6 +2056,9 @@ iframe{
      
 
       @media only screen and (min-width:1000px){
+        .title_2{
+            font-size: 7em!important;
+        }
         .circuloBlanco{
             width: 60%!important;
             height: auto!important;

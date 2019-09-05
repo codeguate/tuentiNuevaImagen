@@ -18,7 +18,7 @@ $(document).ready(function () {
 	// });	
   $(window).scroll(function() {
     var windowHeight = $(window).scrollTop();
-    var contenido2 = $("#contein_row_2").offset();
+    var contenido2 = $("#contein_row_3").offset();
 		contenido2 = contenido2.top;
     
     if( contenido2 > windowHeight){
