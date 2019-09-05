@@ -130,7 +130,7 @@ h4 {
     font-family: "Catamaran-light";
     border-radius: 5px;
 }
-.title_2{
+.title_3{
     font-size: 7em; 
 }
 .title_3{
@@ -2057,7 +2057,7 @@ iframe{
 
       @media only screen and (min-width:1000px){
         .title_2{
-            font-size: 7em!important;
+            font-size: 7em;
         }
         .circuloBlanco{
             width: 60%!important;
@@ -2125,17 +2125,17 @@ iframe{
     } 
     @media only screen and (min-width:1900px){
         .resultados{
-            left: 30%!important;
+            left: 35%!important;
         }
     }
     @media only screen and (max-width:1700px) and (min-width:1300px){
         .resultados{
-            left: 20%!important;
+            left: 35%!important;
         }
     }
     @media only screen and (max-width:1300px) and (min-width:1000px){
         .resultados{
-            left: 16%!important;
+            left: 20%!important;
         }
         .resultadosBusqueda {
             width: 45%;
@@ -2157,6 +2157,9 @@ iframe{
         .facebook_flotante {
             left: 0px!important;
         }
+    }
+    .titulo-text{
+        font-size: 1.25rem!important;
     }
     @media only screen and (max-width:1000px){
         .titulo-text{

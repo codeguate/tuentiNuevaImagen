@@ -8,8 +8,16 @@ $(document).ready(function () {
   ];
   $( "#resultadosInput" ).autocomplete({
     source: availableTags,
-    select: showLabel
-  });
+    select: showLabel,
+    minLength: 0
+  }).focus(function(){            
+    // The following works only once.
+    // $(this).trigger('keydown.autocomplete');
+    // As suggested by digitalPBK, works multiple times
+    // $(this).data("autocomplete").search($(this).val());
+    // As noted by Jonny in his answer, with newer versions use uiAutocomplete
+    $(this).data("uiAutocomplete").search($(this).val());
+});
 
   // $(document).scroll(function(e){
 	// 	if( $("#contein_row_2").scrollTop() < $(window).scrollTop()){
@@ -20,7 +28,7 @@ $(document).ready(function () {
 	// });	
   $(window).scroll(function() {
     var windowHeight = $(window).scrollTop();
-    var contenido2 = $("#contein_row_3").offset();
+    var contenido2 = $("#contein_row_5").offset();
 		contenido2 = contenido2.top;
     
     if( contenido2 > windowHeight){
@@ -45,9 +53,9 @@ $(document).ready(function () {
 });
     function showLabel(event, ui) {
       // console.log(ui.item.label);
-      
+      buscar2(ui.item.label)
            buscar(ui.item.label)
-            }
+    }
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
@@ -507,6 +515,8 @@ $(document).ready(function () {
         $("#contein_row_3 .col-img").addClass("d-flex");
         $("#contein_row_3.title h4").css("font-size","");
         $("#contein_row_3 .title_2").css("font-size","");
+        $("#contein_row_3 .title_2").addClass("title_3");
+
         $("#contein_row_3 .col-img").animate({
           opacity: 1,
           top: "0",
@@ -872,7 +882,9 @@ function animation(num){
             width: "25%"
           },500,function(){
             $("#contein_row_3.title h4").css("font-size","3em");
-            $("#contein_row_3 .title_2").css("font-size","3em");
+            $("#contein_row_3 .title_2").css("font-size","2em");
+            $("#contein_row_3 .title_2").removeClass("title_3");
+
             $("#contein_row_3 #more-33").fadeOut();
             $("#contein_row_3 .contain_more_data").removeClass("d-none");
             $("#contein_row_3 .contain_more_data").addClass("d-flex");
@@ -922,7 +934,7 @@ function animation(num){
             width: "25%"
           },500,function(){
             $("#contein_row_5.title h4").css("font-size","3em");
-            $("#contein_row_5 .title_2").css("font-size","3em");
+            $("#contein_row_5 .title_2").css("font-size","2em");
             $("#contein_row_5 #more-55").fadeOut();
             $("#contein_row_5 .contain_more_data").removeClass("d-none");
             $("#contein_row_5 .contain_more_data").addClass("d-flex");
@@ -1105,6 +1117,42 @@ async function limpiarBusqueda(i){
       }
 
       
+}
+
+function buscar2(text){
+  text = text.toLowerCase()
+    if(text==""){
+      limpiarBusqueda(0)
+    }else{
+      // console.log(text);
+      var temp = []
+      var result = rows.forEach(element => {
+          var fin = element.keys.indexOf(text)
+          if(fin!=-1){
+            temp.push(element) ;
+          }
+      });
+      result = temp
+      // if(element.keys==text){
+      //   return 
+      // }
+      // console.log(result);
+      // console.log(result.length);
+      if(result.length>0 && result.length<=5){
+        limpiarBusqueda(result.length);
+        this.location.href = "#"+result[0].div
+        
+      }else{
+        limpiarBusqueda(0);
+      }
+      
+      
+      // $("#animate1").animate({display:''}, 300);
+    }
+   
+    // $("#alert1").removeClass("iniciar");
+    // $("#alert1").addClass("fin");
+    
 }
 function buscar(text){
   text = text.toLowerCase()
