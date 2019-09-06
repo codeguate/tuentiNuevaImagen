@@ -28,7 +28,7 @@ $(document).ready(function () {
 	// });	
   $(window).scroll(function() {
     var windowHeight = $(window).scrollTop();
-    var contenido2 = $("#contein_row_5").offset();
+    var contenido2 = $("#trigger77").offset();
 		contenido2 = contenido2.top;
     
     if( contenido2 > windowHeight){
@@ -462,8 +462,10 @@ $(document).ready(function () {
         },500);
         $("#contein_row_2 .col-img").removeClass("d-none");
         $("#contein_row_2 .col-img").addClass("d-flex");
-        $("#contein_row_2.title h4").css("font-size","");
+        $("#contein_row_2 .title h4").css("font-size","");
         $("#contein_row_2 .title_2").css("font-size","");
+        $("#contein_row_2 .description .text_description").css("font-size","");
+        $("#contein_row_2 .title_2").css("margin-bottom","");
         
         $("#contein_row_2 .col-img").animate({
           opacity: 1,
@@ -513,8 +515,10 @@ $(document).ready(function () {
         },500);
         $("#contein_row_3 .col-img").removeClass("d-none");
         $("#contein_row_3 .col-img").addClass("d-flex");
-        $("#contein_row_3.title h4").css("font-size","");
+        $("#contein_row_3 .title h4").css("font-size","");
         $("#contein_row_3 .title_2").css("font-size","");
+        $("#contein_row_3 .description .text_description").css("font-size","");
+        $("#contein_row_3 .title_2").css("margin-bottom","");
         $("#contein_row_3 .title_2").addClass("title_3");
 
         $("#contein_row_3 .col-img").animate({
@@ -560,8 +564,10 @@ $(document).ready(function () {
         },500);
         $("#contein_row_4 .col-img").removeClass("d-none");
         $("#contein_row_4 .col-img").addClass("d-flex");
-        $("#contein_row_4.title h4").css("font-size","");
+        $("#contein_row_4 .title h4").css("font-size","");
         $("#contein_row_4 .title_2").css("font-size","");
+        $("#contein_row_4 .description .text_description").css("font-size","");
+        $("#contein_row_4 .title_2").css("margin-bottom","");
         $("#contein_row_4 .col-img").animate({
           opacity: 1,
           top: "0",
@@ -590,7 +596,8 @@ $(document).ready(function () {
           },500,function(){
             console.log("full");
             $("#contein_row_5").addClass("h-90");
-            $("#contein_row_5").removeAttr("style","height: 100vh !important");
+            $("#contein_row_5").removeAttr("style","height: 100vh !important;margin-top: 15vh!important;");
+
           });
         });
       }else{
@@ -605,8 +612,10 @@ $(document).ready(function () {
         },500);
         $("#contein_row_5 .col-img").removeClass("d-none");
         $("#contein_row_5 .col-img").addClass("d-flex");
-        $("#contein_row_5.title h4").css("font-size","");
+        $("#contein_row_5 .title h4").css("font-size","");
         $("#contein_row_5 .title_2").css("font-size","");
+        $("#contein_row_5 .description .text_description").css("font-size","");
+        $("#contein_row_5 .title_2").css("margin-bottom","");
         $("#contein_row_5 .col-img").animate({
           opacity: 1,
           top: "0",
@@ -650,8 +659,10 @@ $(document).ready(function () {
         },500);
         $("#contein_row_6 .col-img").removeClass("d-none");
         $("#contein_row_6 .col-img").addClass("d-flex");
-        $("#contein_row_6.title h4").css("font-size","");
+        $("#contein_row_6 .title h4").css("font-size","");
         $("#contein_row_6 .title_2").css("font-size","");
+        $("#contein_row_6 .description .text_description").css("font-size","");
+        $("#contein_row_6 .title_2").css("margin-bottom","");
         $("#contein_row_6 .col-img").animate({
           opacity: 1,
           top: "0",
@@ -673,8 +684,10 @@ $(document).ready(function () {
       },500);
       $("#contein_row_7 .col-img").removeClass("d-none");
       $("#contein_row_7 .col-img").addClass("d-flex");
-      $("#contein_row_7.title h4").css("font-size","");
+      $("#contein_row_7 .title h4").css("font-size","");
       $("#contein_row_7 .title_2").css("font-size","");
+    $("#contein_row_7 .description .text_description").css("font-size","");
+    $("#contein_row_7 .title_2").css("margin-bottom","");
       $("#contein_row_7 .col-img").animate({
         opacity: 1,
         top: "0",
@@ -694,8 +707,10 @@ $(document).ready(function () {
       },500);
       $("#contein_row_8 .col-img").removeClass("d-none");
       $("#contein_row_8 .col-img").addClass("d-flex");
-      $("#contein_row_8.title h4").css("font-size","");
+      $("#contein_row_8 .title h4").css("font-size","");
       $("#contein_row_8 .title_2").css("font-size","");
+    $("#contein_row_8 .description .text_description").css("font-size","");
+    $("#contein_row_8 .title_2").css("margin-bottom","");
       $("#contein_row_8 .col-img").animate({
         opacity: 1,
         top: "0",
@@ -715,8 +730,10 @@ $(document).ready(function () {
       },500);
       $("#contein_row_9 .col-img").removeClass("d-none");
       $("#contein_row_9 .col-img").addClass("d-flex");
-      $("#contein_row_9.title h4").css("font-size","");
+      $("#contein_row_9 .title h4").css("font-size","");
       $("#contein_row_9 .title_2").css("font-size","");
+    $("#contein_row_9 .description .text_description").css("font-size","");
+    $("#contein_row_9 .title_2").css("margin-bottom","");
       $("#contein_row_9 .col-img").animate({
         opacity: 1,
         top: "0",
@@ -806,7 +823,10 @@ $(document).ready(function () {
           $("#contein_row_5 .contain_more_data").removeClass("d-none");
           $("#contein_row_5 .contain_more_data").addClass("d-flex");
           $("#contein_row_5").removeClass("h-90");
-          $("#contein_row_5").attr("style","height: 100vh !important");
+          if($(window).width()<1000){
+            
+          }
+          $("#contein_row_5").attr("style","height: 100vh !important;margin-top: 15vh!important;");
           $("#contein_row_5 .contain_more_data").animate({
             opacity: "1",
             left: "0"
@@ -856,8 +876,10 @@ function animation(num){
         $("#contein_row_2 ").animate({
           width: "25%"
         },500,function(){
-          $("#contein_row_2.title h4").css("font-size","3em");
+          $("#contein_row_2 .title h4").attr("style","font-size: 2em !important");
           $("#contein_row_2 .title_2").css("font-size","3em");
+        $("#contein_row_2 .description .text_description").css("font-size","1em!important");
+          $("#contein_row_2 .title_2").css("margin-bottom","0.8em");
           $("#contein_row_2 #more-33").fadeOut();
           $("#contein_row_2 .contain_more_data").removeClass("d-none");
           $("#contein_row_2 .contain_more_data").addClass("d-flex");
@@ -881,8 +903,10 @@ function animation(num){
           $("#contein_row_3 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_3.title h4").css("font-size","3em");
-            $("#contein_row_3 .title_2").css("font-size","2em");
+            $("#contein_row_3 .title h4").attr("style","font-size: 2em !important");
+            $("#contein_row_3 .title_2").css("font-size","3em");
+            $("#contein_row_3 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_3 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_3 .title_2").removeClass("title_3");
 
             $("#contein_row_3 #more-33").fadeOut();
@@ -908,8 +932,10 @@ function animation(num){
           $("#contein_row_4 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_4.title h4").css("font-size","3em");
+            $("#contein_row_4 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_4 .title_2").css("font-size","3em");
+            $("#contein_row_4 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_4 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_4 #more-44").fadeOut();
             $("#contein_row_4 .contain_more_data").removeClass("d-none");
             $("#contein_row_4 .contain_more_data").addClass("d-flex");
@@ -933,8 +959,10 @@ function animation(num){
           $("#contein_row_5 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_5.title h4").css("font-size","3em");
-            $("#contein_row_5 .title_2").css("font-size","2em");
+            $("#contein_row_5 .title h4").attr("style","font-size: 2em !important");
+            $("#contein_row_5 .title_2").css("font-size","3em");
+            $("#contein_row_5 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_5 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_5 #more-55").fadeOut();
             $("#contein_row_5 .contain_more_data").removeClass("d-none");
             $("#contein_row_5 .contain_more_data").addClass("d-flex");
@@ -958,8 +986,10 @@ function animation(num){
           $("#contein_row_6 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_6.title h4").css("font-size","3em");
+            $("#contein_row_6 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_6 .title_2").css("font-size","3em");
+            $("#contein_row_6 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_6 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_6 #more-66").fadeOut();
             $("#contein_row_6 .contain_more_data").removeClass("d-none");
             $("#contein_row_6 .contain_more_data").addClass("d-flex");
@@ -983,8 +1013,10 @@ function animation(num){
           $("#contein_row_7 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_7.title h4").css("font-size","3em");
+            $("#contein_row_7 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_7 .title_2").css("font-size","3em");
+            $("#contein_row_7 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_7 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_7 #more-2").fadeOut();
             $("#contein_row_7 .contain_more_data").removeClass("d-none");
             $("#contein_row_7 .contain_more_data").addClass("d-flex");
@@ -1008,8 +1040,10 @@ function animation(num){
           $("#contein_row_8 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_8.title h4").css("font-size","3em");
+            $("#contein_row_8 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_8 .title_2").css("font-size","3em");
+            $("#contein_row_8 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_8 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_8 #more-2").fadeOut();
             $("#contein_row_8 .contain_more_data").removeClass("d-none");
             $("#contein_row_8 .contain_more_data").addClass("d-flex");
@@ -1033,8 +1067,10 @@ function animation(num){
           $("#contein_row_9 ").animate({
             width: "25%"
           },500,function(){
-            $("#contein_row_9.title h4").css("font-size","3em");
+            $("#contein_row_2.title h4").css("font-size","2em");
             $("#contein_row_9 .title_2").css("font-size","3em");
+            $("#contein_row_9 .description .text_description").css("font-size","1em!important");
+              $("#contein_row_9 .title_2").css("margin-bottom","0.8em");
             $("#contein_row_9 #more-2").fadeOut();
             $("#contein_row_9 .contain_more_data").removeClass("d-none");
             $("#contein_row_9 .contain_more_data").addClass("d-flex");
@@ -1272,6 +1308,8 @@ function white_button(){
   //     },500,function(){
   //       $(".title h4").css("font-size","3em");
   //       $(".title_2").css("font-size","3em");
+//       $(".description .text_description").css("font-size","1em!important");
+//       $(".title_2").css("margin-bottom","0.8em");
   //       $("#more-2").fadeOut();
   //       $(".contain_more_data").removeClass("d-none");
   //       $(".contain_more_data").addClass("d-flex");

@@ -130,7 +130,7 @@ h4 {
     font-family: "Catamaran-light";
     border-radius: 5px;
 }
-.title_3{
+.title_33{
     font-size: 7em; 
 }
 .title_3{
@@ -282,7 +282,7 @@ h4 {
     height: 80%;
     position: absolute;
     top: 18%;
-    left: 30%;
+    left: 35%;
     font-size: 2em;
     width: 100%;
     z-index: 5;
@@ -320,6 +320,7 @@ h4 {
 .text-title-more-b{
     font-size: 3em !important;
     color: white;
+    margin-bottom: 2rem;
 }
 .description-more-text{
     color: white;
@@ -338,7 +339,7 @@ h4 {
     overflow-y: auto;
     height: 35vh;
     direction: rtl;
-    font-size: 1.5rem!important;
+    font-size: 1.7rem!important;
 }
 .share_icon{
     margin-left: auto;
@@ -355,7 +356,7 @@ h4 {
 }
 .text_description p {
     direction: ltr;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
 }
 
 /*scrollbar*/
@@ -478,6 +479,7 @@ iframe{
     height: 186px;
     margin-right: auto;
     display: block;
+    margin-bottom: 1rem!important;
 }
 .icon{
     vertical-align: middle;
@@ -623,7 +625,13 @@ iframe{
         line-height: 1!important;
     }
 }
+@media only screen and (min-width:0px) and (max-width:376px){
+    .inicioDiv{
+        margin-top: 20vh!important;
+    }
+}
 @media only screen and (max-width:1000px){
+    
     
     .description-more-text{
         font-size: 1rem!important;
@@ -793,6 +801,7 @@ iframe{
         height: 186px;
         margin: auto;
         display: block;
+        margin-bottom: 1rem!important;
     }
     .return{
         display: none !important;
@@ -2059,6 +2068,10 @@ iframe{
         .title_2{
             font-size: 7em;
         }
+        .button_more {
+            bottom: 4rem;
+            position: absolute;
+        }
         .circuloBlanco{
             width: 60%!important;
             height: auto!important;
@@ -2130,7 +2143,7 @@ iframe{
     }
     @media only screen and (max-width:1700px) and (min-width:1300px){
         .resultados{
-            left: 35%!important;
+            left: 25%!important;
         }
     }
     @media only screen and (max-width:1300px) and (min-width:1000px){
@@ -2159,12 +2172,13 @@ iframe{
         }
     }
     .titulo-text{
-        font-size: 1.25rem!important;
+        font-size: 1.7rem!important;
     }
     @media only screen and (max-width:1000px){
         .titulo-text{
             width: 80%!important;
             margin-left: 5%!important;
+            font-size: 1rem!important;
            
         }
         .pruebaPadding{
