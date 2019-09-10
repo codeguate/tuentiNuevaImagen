@@ -816,7 +816,8 @@ iframe{
         display: block;
     }
     .content_buton{
-        height: 10px;
+        height: 50px;
+        margin-top: 12px;
     }
     .return_button{
         height: 40px;
