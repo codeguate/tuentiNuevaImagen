@@ -754,7 +754,13 @@ $(document).ready(function () {
           $("#contein_row_2 .contain_more_data").removeClass("d-none");
           $("#contein_row_2 .contain_more_data").addClass("d-flex");
           $("#contein_row_2").removeClass("h-90");
-          $("#contein_row_2").attr("style","height: 100vh !important");
+          if ($(window).width() < 330) {
+            $("#contein_row_2").attr("style","height: 140vh !important;margin-top: 15vh!important;");
+          }else if ($(window).width() < 361){
+            $("#contein_row_2").attr("style","height: 120vh !important;margin-top: 15vh!important;");
+          }else{
+            $("#contein_row_2").attr("style","height: 100vh !important;margin-top: 15vh!important;");
+          }
           $("#contein_row_2 .contain_more_data").animate({
             opacity: "1",
             left: "0"
@@ -777,7 +783,14 @@ $(document).ready(function () {
           $("#contein_row_3 .contain_more_data").removeClass("d-none");
           $("#contein_row_3 .contain_more_data").addClass("d-flex");
           $("#contein_row_3").removeClass("h-90");
-          $("#contein_row_3").attr("style","height: 100vh !important");
+          if ($(window).width() < 330) {
+            $("#contein_row_3").attr("style","height: 140vh !important;margin-top: 15vh!important;");
+          }else if ($(window).width() < 361){
+            $("#contein_row_3").attr("style","height: 120vh !important;margin-top: 15vh!important;");
+          }else{
+            $("#contein_row_3").attr("style","height: 100vh !important;margin-top: 15vh!important;");
+          }
+          
           $("#contein_row_3 .contain_more_data").animate({
             opacity: "1",
             left: "0"
@@ -800,7 +813,14 @@ $(document).ready(function () {
           $("#contein_row_4 .contain_more_data").removeClass("d-none");
           $("#contein_row_4 .contain_more_data").addClass("d-flex");
           $("#contein_row_4").removeClass("h-90");
-          $("#contein_row_4").attr("style","height: 100vh !important");
+          if ($(window).width() < 330) {
+            $("#contein_row_4").attr("style","height: 140vh !important;margin-top: 15vh!important;");
+          }else if ($(window).width() < 361){
+            $("#contein_row_4").attr("style","height: 120vh !important;margin-top: 15vh!important;");
+          }else{
+            $("#contein_row_4").attr("style","height: 100vh !important;margin-top: 15vh!important;");
+          }
+          
           $("#contein_row_4 .contain_more_data").animate({
             opacity: "1",
             left: "0"
@@ -823,10 +843,14 @@ $(document).ready(function () {
           $("#contein_row_5 .contain_more_data").removeClass("d-none");
           $("#contein_row_5 .contain_more_data").addClass("d-flex");
           $("#contein_row_5").removeClass("h-90");
-          if($(window).width()<1000){
-            
+          
+          if ($(window).width() < 330) {
+            $("#contein_row_5").attr("style","height: 140vh !important;margin-top: 15vh!important;");
+          }else if ($(window).width() < 361){
+            $("#contein_row_5").attr("style","height: 120vh !important;margin-top: 15vh!important;");
+          }else{
+            $("#contein_row_5").attr("style","height: 100vh !important;margin-top: 15vh!important;");
           }
-          $("#contein_row_5").attr("style","height: 100vh !important;margin-top: 15vh!important;");
           $("#contein_row_5 .contain_more_data").animate({
             opacity: "1",
             left: "0"
