@@ -625,9 +625,15 @@ iframe{
         line-height: 1!important;
     }
 }
-@media only screen and (min-width:0px) and (max-width:376px){
+@media only screen and (min-width:330px) and (max-width:370px){
     .inicioDiv{
-        margin-top: 20vh!important;
+        margin-top: 22vh!important;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:329px){
+    .inicioDiv{
+        margin-top: 25vh!important;
     }
 }
 @media only screen and (max-width:1000px){
