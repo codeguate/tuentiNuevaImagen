@@ -49,6 +49,21 @@ html , body{
 .ml15 .word{
     font-size: 5rem!important;
 }
+@media only screen and (max-width: 1200px){
+    .ml15 .word{
+        font-size: 4rem!important;
+    }
+}
+@media only screen and (min-width: 1367px){
+    .ml15 .word{
+        font-size: 6rem!important;
+    }
+}
+@media only screen and (min-width: 1770px){
+    .ml15 .word{
+        font-size: 8rem!important;
+    }
+}
 .c-bold{
     font-family: "Catamaran-extrabold";
 }
@@ -474,9 +489,9 @@ h4 {
     width: 100%;
     z-index: 999;
 }
-iframe{
-    width: 300px;
-    height: 186px;
+iframe {
+    width: 100%;
+    height: 35%;
     margin-right: auto;
     display: block;
     margin-bottom: 1rem!important;
@@ -619,11 +634,13 @@ iframe{
     .mb_s_5 {
         font-size: 3.7em;
     }
+    
 }
 @media only screen and (max-width:1700px){
     .mb_t_3{
         line-height: 1!important;
     }
+    
 }
 @media only screen and (min-width:330px) and (max-width:370px){
     .inicioDiv{
@@ -746,7 +763,7 @@ iframe{
         height: fit-content !important;
     }
     .ml15 .word {
-        font-size: 1.12em!important;
+        font-size: 1.6em!important;
     }
     .ml15{
         width: 90% !important;
@@ -791,7 +808,7 @@ iframe{
         margin: 0 !important;
     }
     .title{
-        padding-top: 15vh;
+        padding-top: 0vh;
     }
     .text-title-more-a{
         font-size: 1.7em !important;
@@ -908,13 +925,27 @@ iframe{
     top: 3%;
 
 }
-
+.gpsimg{
+    background-image: url(../img/phone-rosa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.gpsContaner{
+    width: 100%;
+    display: inherit;
+}
+.gpsIcon {
+    height: 64%;
+    margin-right: auto;
+    margin-left: auto ;
+}
 .animation-target {
     animation: animation-target 3s linear infinite both;
     backface-visibility: visible;
     /* -webkit-animation: animation 2000ms linear infinite both; */
     /* animation: animation 2000ms linear infinite both; */
-  }
+}
+
   @keyframes animation-target{
     10%{
       transform: rotateY(36deg);
@@ -1711,6 +1742,7 @@ iframe{
         margin-right: 15%;
     
     }
+    
     .socialContaner{
         display: flex!important;
         -webkit-align-items: center!important;
@@ -1743,6 +1775,21 @@ iframe{
     right: 0;
     margin-right: 15%;
     
+    }
+    .gpsimg{
+        background-image: url(../img/phone-rosa.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .gpsContaner{
+        width: 100%;
+        position: inherit;
+    }
+    .gpsIcon {
+        height: 64%;
+        margin-right: auto;
+        margin-left: auto ;
     }
     @media only screen and (max-width:1000px){
         #instagramIcon{
@@ -1886,6 +1933,36 @@ iframe{
     align-self: center;
     margin-left: 6%;
     margin-top: 5%;
+    }
+    .gpsimg{
+        background-image: url(../img/phone-rosa.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .gpsContaner{
+        width: 100%;
+        position: inherit;
+    }
+    .gpsIcon {
+        height: 64%;
+        margin-right: auto;
+        margin-left: auto ;
+    }
+    @media only screen and (max-width: 1000px){
+        .gpsimg{
+            background-image: url(../img/phone-rosa.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .gpsIcon {
+            height: auto;
+            width: 38%;
+        }
+        .gpsContaner{
+            height: 90vh;
+        }
     }
     .animation-twitter-icon {
         animation: animation-twitter-icon 10s linear infinite both;
@@ -2224,29 +2301,42 @@ iframe{
             z-index: 2;
           }
           #animate1{
-              height: 35vh!important;
+              height: 55vh!important;
               overflow-y: hidden;
+          }
+          /* #contein_row_5{
+              margin-top: 55vh;
+          } */
+          .bg-tuenti{
+              height: fit-content !important;
+          }
+          #contein_row_1{
+              background-color: #f70866 !important;
+              height: fit-content !important;
           }
         #izIcon{
             width: 45%!important;
-    left: -10%!important;
-    margin-top: 5%;
+            left: -10%!important;
+            margin-top: 0%;
+            top: 35%;
           }
         #centroIcon{
-            margin-top: 5%!important;
+            margin-top: 0%!important;
     right: 8%!important;
     width: 90%!important;
+            top: 5%;
           }
         #detIcon{
             right: -10%!important;
-            margin-top: 10%!important;
-            width: 40%!important;
+            margin-top: 0%!important;
+            top: 35%;
+            width: 45%!important;
           }
-        #comboTituloIcon{
-            right: -10%!important;
-            width: 120%!important;
+        #comboTituloIcon {
+            width: 100%!important;
+            left: 0;
             margin-top: 10%!important;
-          }
+        }
         #taponIcon{
             left: 29%!important;
             bottom: 54%!important;

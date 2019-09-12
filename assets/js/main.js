@@ -898,7 +898,7 @@ function animation(num){
         $("#contein_row_2 .col-img").removeClass("d-flex");
         $("#contein_row_2 .col-img").addClass("d-none");
         $("#contein_row_2 ").animate({
-          width: "25%"
+          width: "33%"
         },500,function(){
           $("#contein_row_2 .title h4").attr("style","font-size: 2em !important");
           $("#contein_row_2 .title_2").css("font-size","3em");
@@ -925,7 +925,7 @@ function animation(num){
           $("#contein_row_3 .col-img").removeClass("d-flex");
           $("#contein_row_3 .col-img").addClass("d-none");
           $("#contein_row_3 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_3 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_3 .title_2").css("font-size","3em");
@@ -954,7 +954,7 @@ function animation(num){
           $("#contein_row_4 .col-img").removeClass("d-flex");
           $("#contein_row_4 .col-img").addClass("d-none");
           $("#contein_row_4 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_4 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_4 .title_2").css("font-size","3em");
@@ -981,7 +981,7 @@ function animation(num){
           $("#contein_row_5 .col-img").removeClass("d-flex");
           $("#contein_row_5 .col-img").addClass("d-none");
           $("#contein_row_5 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_5 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_5 .title_2").css("font-size","3em");
@@ -1008,7 +1008,7 @@ function animation(num){
           $("#contein_row_6 .col-img").removeClass("d-flex");
           $("#contein_row_6 .col-img").addClass("d-none");
           $("#contein_row_6 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_6 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_6 .title_2").css("font-size","3em");
@@ -1035,7 +1035,7 @@ function animation(num){
           $("#contein_row_7 .col-img").removeClass("d-flex");
           $("#contein_row_7 .col-img").addClass("d-none");
           $("#contein_row_7 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_7 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_7 .title_2").css("font-size","3em");
@@ -1062,7 +1062,7 @@ function animation(num){
           $("#contein_row_8 .col-img").removeClass("d-flex");
           $("#contein_row_8 .col-img").addClass("d-none");
           $("#contein_row_8 ").animate({
-            width: "25%"
+            width: "33%"
           },500,function(){
             $("#contein_row_8 .title h4").attr("style","font-size: 2em !important");
             $("#contein_row_8 .title_2").css("font-size","3em");
