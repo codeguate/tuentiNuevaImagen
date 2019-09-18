@@ -662,16 +662,25 @@ iframe {
     }
     
 }
-@media only screen and (min-width:330px) and (max-width:370px){
+@media only screen and (min-width:370px) and (max-width:375px){
     .inicioDiv{
         margin-top: 22vh!important;
+    }
+    .animation-download-icon {
+        height: 18vh!important;
+        margin-top: 35vh!important;
+
     }
 }
 
 
 @media only screen and (max-width:1000px){
     
-    
+    .animation-download-icon {
+        height: 25vh;
+        margin-top: 35vh!important;
+
+    }
     .description-more-text{
         font-size: 1rem!important;
     }
@@ -877,6 +886,7 @@ iframe {
         background-repeat: no-repeat;
         background-size: 100% 0%;
         background-position: bottom;
+        padding-top: 2rem;
     }
     .mb_t_1{
         font-size: 4.5em !important;
@@ -922,6 +932,7 @@ iframe {
     }
 }
 @media only screen and (min-width:0px) and (max-width:329px){
+    
     .inicioDiv{
         margin-top: 25vh!important;
     }
@@ -2324,7 +2335,7 @@ iframe {
             position: absolute;
             top: 0;
             width: 95%;
-            height: 70vh!important;
+            /* height: 70vh!important; */
             margin-top: 4%!important;
             z-index: 2;
           }
@@ -2426,8 +2437,9 @@ iframe {
       }
 
       .animation-download-icon {
-          margin-top: 50%;
+          margin-top: 30%;
           width: 60%;
+          height: 35vh;
           margin-left: auto;
           margin-right: auto;
         animation: animation-download-icon 1s linear infinite both;
