@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   var availableTags = [
     // "Velocidad de internet",
     "Cobertura",
@@ -56,6 +57,7 @@ $(document).ready(function () {
       buscar2(ui.item.label)
            buscar(ui.item.label)
     }
+    
     var controller = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         triggerElement: "#trigger1",
@@ -962,7 +964,7 @@ function animation(num){
           $("#contein_row_2 .title_2").css("font-size","3em");
         $("#contein_row_2 .description .text_description").css("font-size","1em!important");
           $("#contein_row_2 .title_2").css("margin-bottom","0.8em");
-          $("#contein_row_2 #more-33").fadeOut();
+          $("#contein_row_2 #more-22").fadeOut();
           $("#contein_row_2 .contain_more_data").removeClass("d-none");
           $("#contein_row_2 .contain_more_data").addClass("d-flex");
           $("#contein_row_2 .contain_more_data").animate({
@@ -1363,6 +1365,20 @@ function white_button(){
   $(".search_tre").removeClass("d-none");
   $(".search_tre").fadeIn();
   
+}
+
+function sharePagina(){
+  console.log('share');
+  
+  if(navigator.share) {
+    navigator.share({
+      title: 'Sin Pajas',
+      text: 'Comparte con todos',
+      url: 'http://sinpajas.gt'
+    })
+    .then(() => console.log('Share complete'))
+    .error((error) => console.error('Could not share at this time', error))
+  }
 }
 // anime.timeline({loop: false})
 //   .add({
