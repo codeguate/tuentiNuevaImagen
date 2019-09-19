@@ -67,18 +67,18 @@ html , body{
 @media only screen and (max-width: 1000px){
     .ios{
         height: auto!important;
-        width:80%;
+        width:80%!important;
     }
     .play{
         height: auto!important;
-        width:80%;
+        width:80%!important;
     }
 }
 .ios{
     position: relative;
     /* box-shadow: #ffffff 2px 4px 8px 0px; */
     display:block;
-    height: 100%;
+    width: 10vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:5%;
@@ -89,7 +89,7 @@ html , body{
     position: relative;
     /* box-shadow: #ffffff 2px 4px 8px 0px; */
     display:block;
-    height: 100%;
+    width: 12vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
