@@ -635,6 +635,10 @@ iframe {
 .mr-auto{
     margin-right: auto;
 }
+#contein_row_1{
+    height: 90vh;
+    padding-top: 10vh;
+}
 @media only screen and (min-width:1000px) and (max-width: 1500px){
     
     .mb_t_1{
@@ -948,6 +952,13 @@ iframe {
     }
     #contein_row_5{
         height: 140vh !important;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #contein_row_1,#contein_row_5,#contein_row_2,#contein_row_3,#contein_row_4,#contein_row_6{
+        height: inherit !important;
+        padding-top: 10vh;
     }
 }
 .facebook_flotante{
